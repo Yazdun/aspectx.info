@@ -1,0 +1,86 @@
+export const Routes = [
+  {
+    route: '/genre/action',
+    title: 'Action',
+    icon: '',
+    key: 'ivwULGky4L',
+  },
+  {
+    route: '/genre/indie',
+    title: 'Indie',
+    icon: '',
+    key: 'evDdqPKvb0',
+  },
+  {
+    route: '/genre/adventure',
+    title: 'Adventure',
+    icon: '',
+    key: '',
+  },
+  {
+    route: '/genre/rpg',
+    title: 'RPG',
+    icon: '',
+    key: 'USP20A3DCq',
+  },
+  {
+    route: '/genre/strategy',
+    title: 'Strategy',
+    icon: '',
+    key: '',
+  },
+  {
+    route: '/genre/shooter',
+    title: 'Shooter',
+    icon: '',
+    key: 'cpcByhw1uf',
+  },
+  {
+    route: '/genre/casual',
+    title: 'Casual',
+    icon: '',
+    key: 'ft2ZpGuvCb',
+  },
+  {
+    route: '/genre/simulation',
+    title: 'Simulation',
+    icon: '',
+    key: '6xd7xFTdFb',
+  },
+  {
+    route: '/genre/puzzle',
+    title: 'Puzzle',
+    icon: '',
+    key: '7WtHPJgQLY',
+  },
+  {
+    route: '/genre/arcade',
+    title: 'Arcade',
+    icon: '',
+    key: 'nx2sbCWMen',
+  },
+  {
+    route: '/genre/platformer',
+    title: 'Platformer',
+    icon: '',
+    key: 'pcGZrTtCDf',
+  },
+  {
+    route: '/genre/racing',
+    title: 'Racing',
+    icon: '',
+    key: '5luSC3jxgW',
+  },
+  {
+    route: '/genre/sports',
+    title: 'Sports',
+    icon: '',
+    key: 'BLtmykpzSZ',
+  },
+  {
+    route: '/genre/fighting',
+    title: 'Fighting',
+    icon: '',
+    key: 'CvzXu8HS4z',
+  },
+]

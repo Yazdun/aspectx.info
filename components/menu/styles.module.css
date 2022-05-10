@@ -1,0 +1,6 @@
+.cta {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  font-size: var(--fs-700);
+}

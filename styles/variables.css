@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --background-1: ;
+  --background-2: ;
+  --background-3: ;
+
+  --foreground-1: ;
+  --foreground-2: ;
+  --foreground-3: ;
+
+  --boxshadow-1: ;
+  --boxshadow-2: ;
+  --boxshadow-3: ;
+
+  --ff-serif: 'Ubuntu', sans-serif;
+
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+[data-theme='dark'] {
+}
