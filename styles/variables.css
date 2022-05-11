@@ -5,7 +5,7 @@
   --background-2: ;
   --background-3: ;
 
-  --foreground-1: ;
+  --foreground-1: black;
   --foreground-2: ;
   --foreground-3: ;
 
@@ -30,4 +30,15 @@
 }
 
 [data-theme='dark'] {
+  --background-1: hsl(0, 0%, 0%);
+  --background-2: ;
+  --background-3: ;
+
+  --foreground-1: rgb(255, 255, 255);
+  --foreground-2: ;
+  --foreground-3: ;
+
+  --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;
+  --boxshadow-2: ;
+  --boxshadow-3: ;
 }
