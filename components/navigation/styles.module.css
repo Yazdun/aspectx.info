@@ -1,14 +1,25 @@
 .nav {
-  width: 100%;
   max-width: 60rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
   gap: 1rem;
   align-items: center;
 }
 
-.icon {
-  font-size: 2.5rem;
+.partition {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  box-shadow: var(--boxshadow-1);
+}
+
+.logo {
+  font-size: 1.4rem;
 }

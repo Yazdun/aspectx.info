@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--ff-serif);
+  background-color: var(--background-1);
 }
 
 h1,
@@ -33,6 +34,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button:focus-visible {
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px 2px !important;
 }
 
 /* remove animations for people who've turned them off */

@@ -1,9 +1,19 @@
-import { Twirl as Hamburger } from 'hamburger-react'
-import css from './styles.module.css'
+import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
+import css from './styles.module.css'
 
 export const Menu = () => {
   const [isOpen, setOpen] = useState(false)
-
-  return <Hamburger toggled={isOpen} toggle={setOpen} />
+  return (
+    <>
+      <div className={css.cta}>
+        <Hamburger
+          hideOutline={false}
+          size={26}
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </div>
+    </>
+  )
 }

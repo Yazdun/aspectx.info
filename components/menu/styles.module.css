@@ -1,6 +1,5 @@
 .cta {
   display: flex;
-  border: none;
-  background-color: transparent;
-  font-size: var(--fs-700);
+  box-shadow: var(--boxshadow-1);
+  border-radius: var(--br-1);
 }

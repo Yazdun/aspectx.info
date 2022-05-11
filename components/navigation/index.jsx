@@ -1,12 +1,19 @@
+import { Menu, Search, ThemeSwitch } from 'components'
 import css from './styles.module.css'
-import { GiSamusHelmet } from 'react-icons/gi'
-import { Menu } from 'components/menu'
 
 export const Navigation = () => {
   return (
-    <nav className={css.nav}>
-      <GiSamusHelmet className={css.icon} />
-      <Menu />
-    </nav>
+    <div className={css.container}>
+      <nav className={css.nav}>
+        <div className={css.partition}>
+          <Menu />
+          <p className={css.logo}>AspectX</p>
+        </div>
+        <div className={css.partition}>
+          <Search />
+          <ThemeSwitch />
+        </div>
+      </nav>
+    </div>
   )
 }
