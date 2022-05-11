@@ -21,7 +21,7 @@ export const ThemeSwitch = () => {
   if (!mounted) return null
   return (
     <button className={css.cta} onClick={toggleTheme}>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         {isDark ? <LightBtn key="light" /> : <DarkBtn key="dark" />}
       </AnimatePresence>
     </button>
