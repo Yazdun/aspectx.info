@@ -40,6 +40,7 @@ const LightBtn = () => {
       exit={{
         y: 40,
       }}
+      transition={{ duration: 0.4 }}
       className={css.icon}
     >
       <RiMoonCloudyLine />
@@ -59,6 +60,7 @@ const DarkBtn = () => {
       exit={{
         y: 40,
       }}
+      transition={{ duration: 0.4 }}
       className={css.icon}
     >
       <FiSun />
