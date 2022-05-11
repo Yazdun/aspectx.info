@@ -8,4 +8,9 @@
   box-shadow: var(--boxshadow-1);
   border-radius: var(--br-1);
   cursor: pointer;
+  overflow: hidden;
+}
+
+.icon {
+  display: flex;
 }
