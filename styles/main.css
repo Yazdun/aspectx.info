@@ -22,6 +22,14 @@ p {
   font-weight: 400;
 }
 
+a {
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 /* make images easier to work with */
 img,
 picutre {
@@ -37,8 +45,13 @@ select {
   font: inherit;
 }
 
-button:focus-visible {
+button:focus-visible,
+a:focus-visible {
   box-shadow: var(--foreground-1) 0px 0px 0px 2px !important;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* remove animations for people who've turned them off */

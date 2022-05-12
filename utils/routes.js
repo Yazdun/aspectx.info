@@ -6,7 +6,7 @@ export const Routes = [
     key: 'ApEGH1gjlY',
   },
   {
-    title: 'genres',
+    title: 'explore',
     url: '/',
     icon: '',
     key: 'b3VsuwE56E',
@@ -15,10 +15,10 @@ export const Routes = [
     title: 'platforms',
     url: '/',
     icon: '',
-    key: '',
+    key: 'OLbuBnp2jH',
   },
   {
-    title: 'best of the year',
+    title: 'developers',
     url: '/',
     icon: '',
     key: 'dLo96JGSMa',

@@ -1,0 +1,8 @@
+.route {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: var(--br-1);
+  box-shadow: var(--boxshadow-1);
+}
