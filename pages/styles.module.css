@@ -1,0 +1,11 @@
+.img {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  background-image: url('../assets/ghostrunner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5rem;
+  background-position: center;
+  /* transform: rotate(-30deg); */
+}

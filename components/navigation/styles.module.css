@@ -8,6 +8,7 @@
   padding-block: 0.8rem;
   gap: 1rem;
   align-items: center;
+  background-color: var(--background-1);
 }
 
 .partition {
@@ -19,9 +20,15 @@
 .container {
   width: 100%;
   box-shadow: var(--boxshadow-1);
-  background-color: var(--background-1);
+  background: var(--background-1);
 }
 
 .logo {
   font-size: 1.4rem;
+}
+
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: var(--zindex-nav);
 }

@@ -27,6 +27,14 @@
   --fs-200: 0.875rem;
 
   --max-width: 60rem;
+
+  --zindex-nav: 1000;
+
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  --gap-3: 3rem;
+  --gap-4: 4rem;
+  --gap-5: 5rem;
 }
 
 [data-theme='dark'] {

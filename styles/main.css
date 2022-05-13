@@ -54,6 +54,10 @@ ul {
   list-style-type: none;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
