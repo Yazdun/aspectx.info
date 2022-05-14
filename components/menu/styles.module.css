@@ -12,6 +12,7 @@
   z-index: -1;
   padding-block: 2rem;
   background-color: var(--background-2);
+  box-shadow: var(--boxshadow-1);
 }
 
 .links {

@@ -34,7 +34,7 @@ export const Menu = () => {
             exit={{
               y: '-100%',
             }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className={css.menu}
           >
             <Container sx={css.container}>
