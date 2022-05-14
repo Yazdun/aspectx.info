@@ -25,5 +25,10 @@
     font-size: 2rem;
     margin-bottom: var(--gap-1);
     margin-right: 0;
+    transition: 0.3s;
+  }
+
+  .route:hover svg {
+    transform: scale(1.2) rotate(3deg);
   }
 }

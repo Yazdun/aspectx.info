@@ -1,4 +1,4 @@
-import { Button, Container } from 'components'
+import { Button, Container, LinkButton } from 'components'
 import css from './styles.module.css'
 import cn from 'classnames'
 import { useTheme } from 'next-themes'
@@ -28,9 +28,9 @@ export const Trending = () => {
           in our trending section, All trending games are carefully analyzed by
           our smart search engine, based on our community
         </p>
-        <Button margin="1.5rem 0" active>
+        <LinkButton href="/trendings" margin="0.6rem 0" active>
           Checkout trendings
-        </Button>
+        </LinkButton>
       </Container>
     </div>
   )

@@ -15,6 +15,11 @@
   transition: background 0.8s;
 }
 
+.link {
+  display: inline-block;
+  width: auto;
+}
+
 /* Ripple effect */
 
 .btn:hover {

@@ -1,4 +1,4 @@
-import { Button, Container } from 'components'
+import { Container, LinkButton } from 'components'
 import css from './styles.module.css'
 
 export const Hero = () => {
@@ -10,9 +10,9 @@ export const Hero = () => {
         exploring and discovering over 500,000 game titles including all sort of
         platforms, Right now !
       </p>
-      <Button margin="1.5rem auto" active>
+      <LinkButton href="/explore" margin="0.6rem auto" active>
         Start exploring
-      </Button>
+      </LinkButton>
     </Container>
   )
 }
