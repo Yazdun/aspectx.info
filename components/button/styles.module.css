@@ -22,12 +22,12 @@
 
 /* Ripple effect */
 
-.btn:hover {
+.ripple:hover {
   background: var(--clr-active-1)
     radial-gradient(circle, transparent 1%, var(--clr-active-1) 1%)
     center/15000%;
 }
-.btn:active {
+.ripple:active {
   background-color: var(--clr-active-2);
   background-size: 100%;
   transition: background 0s;

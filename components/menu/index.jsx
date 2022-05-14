@@ -6,6 +6,7 @@ import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useOnClickOutside } from 'hooks'
 import cn from 'classnames'
+import { isMobile } from 'react-device-detect'
 
 export const Menu = () => {
   const [isOpen, setOpen] = useState(false)
@@ -35,8 +36,8 @@ export const Menu = () => {
             exit={{
               y: '-100%',
             }}
-            transition={{ duration: 0.3 }}
-            className={css.menu}
+            transition={{ duration: 0.4 }}
+            className={cn(css.menu, isMobile && css.mobile)}
           >
             <Container sx={css.container}>
               <ul className={css.links}>

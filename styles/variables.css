@@ -2,7 +2,7 @@
 
 :root {
   --background-1: hsl(240, 100%, 98%);
-  --background-2: hsl(240, 100%, 97.5%);
+  --background-2: hsl(240, 100%, 97.4%);
   --background-3: ;
 
   --foreground-1: hsl(0, 0%, 0%);
@@ -42,7 +42,7 @@
 
 [data-theme='dark'] {
   --background-1: hsl(216, 27%, 7%);
-  --background-2: hsl(215, 21%, 10%);
+  --background-2: hsl(215, 21%, 11%);
   --background-3: ;
 
   --foreground-1: rgb(255, 255, 255);

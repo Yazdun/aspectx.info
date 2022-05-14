@@ -5,7 +5,7 @@
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 4.655rem;
   left: 0;
   right: 0;
@@ -14,12 +14,16 @@
   background-color: var(--background-2);
 }
 
+.mobile {
+  bottom: 0;
+  overflow-y: scroll;
+}
+
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   grid-gap: 1rem;
 }
 
-.container {
-  height: 100%;
+@media only screen and (min-width: 800px) {
 }

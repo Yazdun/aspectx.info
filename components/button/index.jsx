@@ -4,7 +4,11 @@ import Link from 'next/link'
 
 export const Button = ({ children, onClick, sx, margin = '0 0' }) => {
   return (
-    <button style={{ margin }} className={cn(css.btn, sx)} onClick={onClick}>
+    <button
+      style={{ margin }}
+      className={cn(css.btn, css.ripple, sx)}
+      onClick={onClick}
+    >
       {children}
     </button>
   )
