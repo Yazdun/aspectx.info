@@ -5,6 +5,7 @@ import { Routes } from 'utils'
 import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useOnClickOutside } from 'hooks'
+import cn from 'classnames'
 
 export const Menu = () => {
   const [isOpen, setOpen] = useState(false)
@@ -41,7 +42,10 @@ export const Menu = () => {
               <ul className={css.links}>
                 {Routes.map(route => {
                   return (
-                    <li key={route.key}>
+                    <li
+                      className={cn(css.item, route.large && css.large)}
+                      key={route.key}
+                    >
                       <Route route={route} />
                     </li>
                   )

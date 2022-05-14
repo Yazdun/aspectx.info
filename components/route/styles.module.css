@@ -5,4 +5,25 @@
   text-transform: uppercase;
   border-radius: var(--br-1);
   box-shadow: var(--boxshadow-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.route svg {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .route {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .route svg {
+    font-size: 2rem;
+    margin-bottom: var(--gap-1);
+    margin-right: 0;
+  }
 }
