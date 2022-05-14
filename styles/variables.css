@@ -5,13 +5,16 @@
   --background-2: hsl(240, 100%, 97.5%);
   --background-3: ;
 
-  --foreground-1: black;
-  --foreground-2: ;
+  --foreground-1: hsl(0, 0%, 0%);
+  --foreground-2: hsl(237, 8%, 47%);
   --foreground-3: ;
 
   --boxshadow-1: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   --boxshadow-2: ;
   --boxshadow-3: ;
+
+  --clr-active-1: hsl(247, 82%, 66%);
+  --clr-active-2: hsl(247, 82%, 76%);
 
   --br-1: 0.2rem;
 
@@ -20,7 +23,7 @@
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 3.5rem;
   --fs-700: 1.5rem;
-  --fs-600: 1rem;
+  --fs-600: 1.25rem;
   --fs-500: 1rem;
   --fs-400: 0.9375rem;
   --fs-300: 1rem;
@@ -43,7 +46,7 @@
   --background-3: ;
 
   --foreground-1: rgb(255, 255, 255);
-  --foreground-2: ;
+  --foreground-2: rgb(119, 119, 153);
   --foreground-3: ;
 
   --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;
