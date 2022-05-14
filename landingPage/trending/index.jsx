@@ -1,10 +1,17 @@
 import { Button, Container } from 'components'
 import css from './styles.module.css'
 import cn from 'classnames'
+import { useTheme } from 'next-themes'
 
 export const Trending = () => {
+  const { theme } = useTheme()
+  const isDark =
+    theme === 'dark' ||
+    (theme === 'system' &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+
   return (
-    <div className={css.trending}>
+    <div className={cn(css.trending, isDark ? css.dark : css.light)}>
       <Container>
         <h2 className={css.title}>checkout hot trending games</h2>
         <p className={cn(css.info, css.trendingInfo)}>
