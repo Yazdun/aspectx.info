@@ -1,3 +1,6 @@
 export { default as Heart } from './heart.png'
 export { default as Lightning } from './lightning.png'
 export { default as Earthquake } from './earthquake.png'
+export { default as Anger } from './anger.png'
+export { default as Tornado } from './tornado.png'
+export { default as Ice } from './ice.png'
