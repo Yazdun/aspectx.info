@@ -14,13 +14,21 @@ export const Button = ({ children, onClick, sx, margin = '0 0' }) => {
   )
 }
 
-export const LinkButton = ({ children, onClick, sx, margin = '0 0', href }) => {
+export const LinkButton = ({
+  children,
+  onClick,
+  sx,
+  margin = '0 0',
+  href,
+  blank,
+}) => {
   return (
     <Link href={href}>
       <a
         style={{ margin }}
         className={cn(css.btn, css.link, sx)}
         onClick={onClick}
+        target={blank && '_blank'}
       >
         {children}
       </a>

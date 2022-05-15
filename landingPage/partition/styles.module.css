@@ -17,9 +17,11 @@
   margin-bottom: var(--gap-1);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .container {
     display: flex;
+    gap: var(--gap-3);
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -30,15 +32,9 @@
 
   .text {
     text-align: left;
-    margin-left: var(--gap-3);
   }
 
   .rtl {
     flex-direction: row-reverse;
-  }
-
-  .rtl .text {
-    margin-left: 0;
-    margin-right: var(--gap-3);
   }
 }

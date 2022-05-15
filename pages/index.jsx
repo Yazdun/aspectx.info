@@ -1,6 +1,6 @@
 import { Anger, Ice } from 'assets'
 import { Layout } from 'components'
-import { Hero, Partition, Platforms, Trending } from 'landingPage'
+import { Hero, Partition, Platforms, RAWG, Trending } from 'landingPage'
 
 export default function Home() {
   return (
@@ -30,6 +30,7 @@ export default function Home() {
         url="/mustplay"
         image={Ice}
       />
+      <RAWG />
     </Layout>
   )
 }
