@@ -2,7 +2,7 @@
 
 :root {
   --background-1: hsl(240, 100%, 98%);
-  --background-2: hsl(240, 100%, 97.4%);
+  --background-2: hsl(240, 100%, 97%);
   --background-3: ;
 
   --foreground-1: hsl(0, 0%, 0%);
@@ -17,6 +17,7 @@
   --clr-active-2: hsl(247, 82%, 76%);
 
   --br-1: 0.2rem;
+  --br-2: 1rem;
 
   --ff-serif: 'Ubuntu', sans-serif;
 

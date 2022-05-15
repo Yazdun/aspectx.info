@@ -1,3 +1,3 @@
 export { Hero } from './hero'
 export { Trending } from './trending'
-export { MustPlay } from './mustplay'
+export { Platforms } from './platforms'

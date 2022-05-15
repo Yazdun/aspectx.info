@@ -1,0 +1,28 @@
+.platform svg {
+  font-size: 5rem;
+  margin-bottom: var(--gap-2);
+}
+
+.platform {
+  font-size: var(--fs-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--br-2);
+  padding: 1rem;
+  background-color: var(--background-2);
+  color: white;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
