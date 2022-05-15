@@ -6,7 +6,14 @@ import cn from 'classnames'
 
 export const Partition = ({ image = Lightning, rtl, title, info, url }) => {
   return (
-    <Container gap sx={cn(css.container, rtl && css.rtl)}>
+    <Container
+      gap
+      sx={cn(css.container, rtl && css.rtl)}
+      initial={{ opacity: 0, x: rtl ? -50 : 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      duration={0.6}
+      delay={0.3}
+    >
       <div className={css.image}>
         <Image src={image} alt="" />
       </div>

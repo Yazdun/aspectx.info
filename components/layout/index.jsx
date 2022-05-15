@@ -1,6 +1,6 @@
 import { Navigation } from 'components'
 import { NextSeo } from 'next-seo'
-import React from 'react'
+import css from './styles.module.css'
 
 export const Layout = ({ children, title, desc, keywords, image, url }) => {
   return (
@@ -32,7 +32,9 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
         }}
       />
       <Navigation />
-      <main id="main">{children}</main>
+      <main id="main" className={css.main}>
+        {children}
+      </main>
     </>
   )
 }

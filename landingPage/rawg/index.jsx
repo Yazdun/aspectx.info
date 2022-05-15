@@ -3,7 +3,14 @@ import css from './styles.module.css'
 
 export const RAWG = () => {
   return (
-    <Container gap sx={css.container}>
+    <Container
+      gap
+      sx={css.container}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      duration={0.6}
+      delay={0.3}
+    >
       <div className={css.rawg}>
         <h2 className={css.title}>
           Thanks to <span className={css.logo}>RAWG</span> API
