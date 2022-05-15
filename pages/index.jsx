@@ -1,5 +1,5 @@
 import { Layout } from 'components'
-import { Hero, Platforms, Trending } from 'landingPage'
+import { Hero, MustPlay, Platforms, Trending } from 'landingPage'
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <Trending />
       <Platforms />
+      <MustPlay />
     </Layout>
   )
 }

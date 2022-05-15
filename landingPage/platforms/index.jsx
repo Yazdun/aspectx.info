@@ -45,14 +45,14 @@ const data = [
     key: 'Ah7^k',
   },
   {
-    title: 'Xbox',
+    title: 'Xbox Series X/S',
     icon: <SiXbox />,
     darkClr: '#70e000',
     lightClr: '#107C11',
     key: 'LkU%',
   },
   {
-    title: 'Nintendo',
+    title: 'Nintendo Switch',
     icon: <SiNintendoswitch />,
     darkClr: '#e60012',
     lightClr: '#e60012',

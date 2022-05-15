@@ -1,0 +1,35 @@
+.title {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.info {
+  margin: var(--gap-1) auto;
+}
+
+.text {
+  text-align: center;
+}
+
+.image {
+  max-width: 10rem;
+  margin: auto;
+  margin-bottom: var(--gap-1);
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    margin: 0;
+    max-width: 15rem;
+  }
+
+  .text {
+    text-align: left;
+    margin-left: var(--gap-3);
+  }
+}
