@@ -20,14 +20,14 @@ export default function Home() {
         info="Have you ever wondered who creates all these awesome video games ? 
         If the answer is yes, then you can read about industry's 
         most talented developers in our special developer section."
-        url="/mustplay"
+        url="/developers"
         image={Anger}
         rtl
       />
       <Partition
         title="Best Videogame Storefronts !"
         info="You wanna buy a videogame ? Make sure to checkout our storefront section and we will introduce you to the most trusted gaming online stores on the internet"
-        url="/mustplay"
+        url="/stores"
         image={Ice}
       />
       <RAWG />

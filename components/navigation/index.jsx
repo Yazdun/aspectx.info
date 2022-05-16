@@ -1,4 +1,5 @@
 import { Menu, Search, ThemeSwitch } from 'components'
+import Link from 'next/link'
 import css from './styles.module.css'
 
 export const Navigation = () => {
@@ -8,7 +9,9 @@ export const Navigation = () => {
         <nav className={css.nav}>
           <div className={css.partition}>
             <Menu />
-            <p className={css.logo}>AspectX</p>
+            <Link href="/">
+              <a className={css.logo}>AspectX</a>
+            </Link>
           </div>
           <div className={css.partition}>
             <Search />

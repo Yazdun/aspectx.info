@@ -1,6 +1,12 @@
 import css from './index.module.css'
-import { Layout } from 'components'
+import { Container, Layout, Storefront } from 'components'
 
 export default function Stores() {
-  return <Layout title="AspectX | Stores">Stores</Layout>
+  return (
+    <Layout title="AspectX | Stores">
+      <Container sx={css.grid}>
+        <h1>Storefronts</h1>
+      </Container>
+    </Layout>
+  )
 }
