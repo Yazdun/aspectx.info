@@ -1,0 +1,4 @@
+.container {
+  padding-inline: 1rem;
+  margin: var(--gap-5) 0;
+}

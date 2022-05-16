@@ -1,0 +1,4 @@
+.slider {
+  border-radius: var(--br-2);
+  overflow: hidden;
+}

@@ -1,9 +1,16 @@
 .image {
   border-radius: var(--br-2);
   height: 10rem;
+  /* height: 100%; */
   object-fit: cover;
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+.fullimage {
+  /* height: 30rem; */
+  height: 18rem;
+  margin: 0;
 }
 
 .title {
@@ -13,4 +20,23 @@
 
 .card {
   border-radius: var(--br-2);
+  position: relative;
+}
+
+.absolutetitle {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(13, 17, 23, 1),
+    rgba(13, 17, 23, 1),
+    rgba(13, 17, 23, 0.1),
+    rgba(13, 17, 23, 0)
+  );
+  border-bottom-right-radius: var(--br-2);
+  border-bottom-left-radius: var(--br-2);
 }

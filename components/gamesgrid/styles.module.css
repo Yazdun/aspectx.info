@@ -4,5 +4,8 @@
   grid-gap: var(--gap-2);
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
 }
