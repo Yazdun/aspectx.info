@@ -1,6 +1,14 @@
 import css from './index.module.css'
-import { Layout } from 'components'
+import { Container, GamesGrid, GamePrev, Layout } from 'components'
+import mock from 'mocks/trendings.json'
 
 export default function Trending() {
-  return <Layout title="AspectX | Trending">Trendings</Layout>
+  const { results: games } = mock
+  return (
+    <Layout title="AspectX | Trending">
+      <Container gap>
+        <GamesGrid games={games} />
+      </Container>
+    </Layout>
+  )
 }

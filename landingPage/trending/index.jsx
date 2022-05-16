@@ -34,7 +34,7 @@ export const Trending = () => {
           in our trending section, All trending games are carefully analyzed by
           our smart search engine, based on our community
         </p>
-        <LinkButton href="/trendings" margin="0.6rem 0" active>
+        <LinkButton href="/trending" margin="0.6rem 0" active>
           Checkout trendings
         </LinkButton>
       </Container>
