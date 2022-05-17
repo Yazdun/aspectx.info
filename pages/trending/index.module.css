@@ -2,3 +2,16 @@
   padding-inline: 1rem;
   margin: var(--gap-5) 0;
 }
+
+.image {
+  max-width: 7rem;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  margin: var(--gap-1) 0;
+}

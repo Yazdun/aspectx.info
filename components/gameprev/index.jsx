@@ -2,9 +2,10 @@ import Link from 'next/link'
 import css from './styles.module.css'
 import cn from 'classnames'
 import Image from 'next/image'
+import { FaEye } from 'react-icons/fa'
 
 export const GamePrev = ({ game, fullsize }) => {
-  const { slug, name, background_image: image, rating } = game
+  const { slug, name, background_image: image, added } = game
 
   return (
     <Link href={`/games/${slug}`}>
@@ -14,6 +15,12 @@ export const GamePrev = ({ game, fullsize }) => {
         </div>
         <span className={cn(css.title, fullsize && css.absolutetitle)}>
           {name}
+          {fullsize && (
+            <span className={css.added}>
+              <FaEye />
+              {added}
+            </span>
+          )}
         </span>
       </a>
     </Link>

@@ -13,8 +13,9 @@ export function Slider({ slides }) {
     <Swiper
       breakpoints={{
         701: { slidesPerView: 2 },
-        1000: { slidesPerView: 4 },
-        1601: { slidesPerView: 6 },
+        1000: { slidesPerView: 3 },
+        1601: { slidesPerView: 5 },
+        2000: { slidesPerView: 6 },
       }}
       freeMode={true}
       spaceBetween={30}
