@@ -26,11 +26,11 @@ export async function getServerSideProps() {
     }),
   )
 
-  return { props: { data } }
+  return { props: { data, games } }
 }
 
 export default function Trending(props) {
-  const [games, setGames] = useState(props.data.results || [])
+  const [games, setGames] = useState(props.games || [])
 
   return (
     <ErrorBoundary
