@@ -1,10 +1,10 @@
 .image {
   border-radius: var(--br-2);
   height: 10rem;
-  /* height: 100%; */
   object-fit: cover;
   width: 100%;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
 .fullimage {

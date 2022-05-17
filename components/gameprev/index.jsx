@@ -1,18 +1,17 @@
 import Link from 'next/link'
 import css from './styles.module.css'
 import cn from 'classnames'
+import Image from 'next/image'
 
 export const GamePrev = ({ game, fullsize }) => {
   const { slug, name, background_image: image, rating } = game
 
   return (
-    <Link href="/trending">
+    <Link href={`/games/${slug}`}>
       <a className={cn(css.card, fullsize && css.fullcard)}>
-        <img
-          className={cn(css.image, fullsize && css.fullimage)}
-          src={image}
-          alt={name}
-        />
+        <div className={cn(css.image, fullsize && css.fullimage)}>
+          <Image src={image} alt={name} layout="fill" objectFit="cover" />
+        </div>
         <span className={cn(css.title, fullsize && css.absolutetitle)}>
           {name}
         </span>
