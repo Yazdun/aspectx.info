@@ -2,6 +2,7 @@
 const { withPlaiceholder } = require('@plaiceholder/next')
 
 const nextConfig = withPlaiceholder({
+  reactStrictMode: true,
   images: {
     domains: ['media.rawg.io'],
   },

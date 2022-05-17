@@ -8,7 +8,7 @@ import { getPlaiceholder } from 'plaiceholder'
 
 export async function getServerSideProps() {
   const res = await fetch(
-    `https://api.rawg.io/api/games?dates=2022-10-10,2023-10-10&ordering=-added&key=${process.env.API_KEY}`,
+    `https://api.rawg.io/api/games?dates=2022-10-10,2023-10-10&ordering=-added&key=8e549c513551423faf843bc8b968950d`,
   )
 
   const data = await res.json()
