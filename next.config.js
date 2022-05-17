@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const { withPlaiceholder } = require('@plaiceholder/next')
+
+const nextConfig = withPlaiceholder({
   images: {
     domains: ['media.rawg.io'],
   },
-}
+})
 
 module.exports = nextConfig
