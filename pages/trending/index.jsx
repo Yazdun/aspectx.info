@@ -5,6 +5,7 @@ import mock from 'mocks/trendings.json'
 import { Fire1 } from 'assets'
 import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
+import { ErrorBoundary } from 'react-error-boundary'
 
 export async function getServerSideProps() {
   const res = await fetch(
@@ -23,7 +24,7 @@ export async function getServerSideProps() {
         blurDataURL: base64,
       }
     }),
-  ).then(values => values)
+  )
 
   return { props: { games, data } }
 }
@@ -32,20 +33,37 @@ export default function Trending(props) {
   const [games, setGames] = useState(props.data.results || [])
 
   return (
-    <Layout title="AspectX | Trending">
-      <Container gap sx={css.header}>
-        <div className={css.image}>
-          <Image src={Fire1} alt="" />
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // reset the state of your app so the error doesn't happen again
+      }}
+    >
+      <Layout title="AspectX | Trending">
+        <Container gap sx={css.header}>
+          <div className={css.image}>
+            <Image src={Fire1} alt="" />
+          </div>
+          <h1 className={css.title}>Trending Right Now</h1>
+          <p>Trended games are based on our player counts and release date</p>
+        </Container>
+        <div className={css.container}>
+          <Slider slides={games.slice(0, 8)} />
         </div>
-        <h1 className={css.title}>Trending Right Now</h1>
-        <p>Trended games are based on our player counts and release date</p>
-      </Container>
-      <div className={css.container}>
-        <Slider slides={games.slice(0, 8)} />
-      </div>
-      <Container gap>
-        <GamesGrid games={games.slice(8)} />
-      </Container>
-    </Layout>
+        <Container gap>
+          <GamesGrid games={games.slice(8)} />
+        </Container>
+      </Layout>
+    </ErrorBoundary>
+  )
+}
+
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert">
+      <p>Something went wrong:</p>
+      <pre>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </div>
   )
 }
