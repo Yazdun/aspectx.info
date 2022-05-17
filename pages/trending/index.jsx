@@ -4,7 +4,7 @@ import { useState } from 'react'
 import mock from 'mocks/trendings.json'
 import { Fire1 } from 'assets'
 import Image from 'next/image'
-import { getPlaiceholder } from 'plaiceholder'
+// import { getPlaiceholder } from 'plaiceholder'
 import { ErrorBoundary } from 'react-error-boundary'
 
 export async function getServerSideProps() {
@@ -14,19 +14,19 @@ export async function getServerSideProps() {
 
   const data = await res.json()
 
-  const games = await Promise.all(
-    data.results?.map(async game => {
-      const { base64, img } = await getPlaiceholder(game.background_image)
+  // const games = await Promise.all(
+  //   data.results?.map(async game => {
+  //     const { base64, img } = await getPlaiceholder(game.background_image)
 
-      return {
-        ...img,
-        ...game,
-        blurDataURL: base64,
-      }
-    }),
-  )
+  //     return {
+  //       ...img,
+  //       ...game,
+  //       blurDataURL: base64,
+  //     }
+  //   }),
+  // )
 
-  return { props: { games, data } }
+  return { props: { data } }
 }
 
 export default function Trending(props) {
