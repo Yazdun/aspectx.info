@@ -14,17 +14,17 @@ export async function getServerSideProps() {
 
   const data = await res.json()
 
-  // const games = await Promise.all(
-  //   data.results?.map(async game => {
-  //     const { base64, img } = await getPlaiceholder(game.background_image)
+  const games = await Promise.all(
+    data.results?.map(async game => {
+      const { base64, img } = await getPlaiceholder(game.background_image)
 
-  //     return {
-  //       ...img,
-  //       ...game,
-  //       blurDataURL: base64,
-  //     }
-  //   }),
-  // )
+      return {
+        ...img,
+        ...game,
+        blurDataURL: base64,
+      }
+    }),
+  )
 
   return { props: { data } }
 }
