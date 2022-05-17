@@ -1,22 +1,36 @@
 import css from './index.module.css'
 import { Container, GamesGrid, Layout, Slider } from 'components'
+import { useState } from 'react'
 import mock from 'mocks/trendings.json'
 import { Fire1 } from 'assets'
 import Image from 'next/image'
-// import { getPlaiceholder } from 'plaiceholder'
+import { getPlaiceholder } from 'plaiceholder'
 
-// export async function getServerSideProps() {
-//   const res = await fetch(
-//     `https://api.rawg.io/api/games?dates=2022-10-10,2023-10-10&ordering=-added&key=${process.env.API_KEY}`,
-//   )
-//   const data = await res.json()
+export async function getServerSideProps() {
+  const res = await fetch(
+    `https://api.rawg.io/api/games?dates=2022-10-10,2023-10-10&ordering=-added&key=${process.env.API_KEY}`,
+  )
 
-//   return { props: { data } }
-// }
+  const data = await res.json()
+
+  const games = await Promise.all(
+    data.results?.map(async game => {
+      const { base64, img } = await getPlaiceholder(game.background_image)
+
+      return {
+        ...img,
+        ...game,
+        blurDataURL: base64,
+      }
+    }),
+  ).then(values => values)
+
+  return { props: { games } }
+}
 
 export default function Trending(props) {
-  // console.log(props.data.results)
-  const { results: games } = mock
+  const [games, setGames] = useState(props.games || [])
+
   return (
     <Layout title="AspectX | Trending">
       <Container gap sx={css.header}>

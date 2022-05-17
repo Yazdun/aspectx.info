@@ -5,13 +5,20 @@ import Image from 'next/image'
 import { FaEye } from 'react-icons/fa'
 
 export const GamePrev = ({ game, fullsize }) => {
-  const { slug, name, background_image: image, added } = game
+  const { slug, name, background_image: image, added, blurDataURL } = game
 
   return (
     <Link href={`/games/${slug}`}>
       <a className={cn(css.card, fullsize && css.fullcard)}>
         <div className={cn(css.image, fullsize && css.fullimage)}>
-          <Image src={image} alt={name} layout="fill" objectFit="cover" />
+          <Image
+            src={image}
+            alt={name}
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            blurDataURL={blurDataURL}
+          />
         </div>
         <span className={cn(css.title, fullsize && css.absolutetitle)}>
           {name}
