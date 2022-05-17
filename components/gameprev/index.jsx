@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { FaEye } from 'react-icons/fa'
 
 export const GamePrev = ({ game, fullsize }) => {
-  const { slug, name, background_image: image, added, blurDataURL } = game
+  const { slug, name, background_image: image, added } = game
 
   return (
     <Link href={`/games/${slug}`}>
@@ -16,8 +16,8 @@ export const GamePrev = ({ game, fullsize }) => {
             alt={name}
             layout="fill"
             objectFit="cover"
-            placeholder="blur"
-            blurDataURL={blurDataURL}
+            // placeholder="blur"
+            // blurDataURL={blurDataURL}
           />
         </div>
         <span className={cn(css.title, fullsize && css.absolutetitle)}>

@@ -25,11 +25,11 @@ export async function getServerSideProps() {
     }),
   ).then(values => values)
 
-  return { props: { games } }
+  return { props: { games, data } }
 }
 
 export default function Trending(props) {
-  const [games, setGames] = useState(props.games || [])
+  const [games, setGames] = useState(props.data.results || [])
 
   return (
     <Layout title="AspectX | Trending">
