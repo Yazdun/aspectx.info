@@ -4,7 +4,7 @@ import { useState } from 'react'
 import mock from 'mocks/trendings.json'
 import { Fire1 } from 'assets'
 import Image from 'next/image'
-import { getPlaiceholder } from 'plaiceholder'
+// import { getPlaiceholder } from 'plaiceholder'
 import { ErrorBoundary } from 'react-error-boundary'
 
 export async function getServerSideProps() {
