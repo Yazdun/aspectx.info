@@ -1,0 +1,27 @@
+.err {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  font-size: 3.8rem;
+}
+
+.info {
+  margin-top: var(--gap-1);
+}
+
+@media only screen and (min-width: 450px) {
+  .err {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .info {
+    margin-top: 0;
+    margin-left: var(--gap-1);
+  }
+}

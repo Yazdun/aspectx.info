@@ -3,14 +3,7 @@ import css from './styles.module.css'
 
 export const Hero = () => {
   return (
-    <Container
-      gap
-      sx={css.header}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      duration={0.6}
-      delay={0.3}
-    >
+    <Container gap sx={css.header}>
       <h1 className={css.title}>Explore Video Games Like Never Before</h1>
       <p className={css.info}>
         Are you looking for hot trending new games to play ? You can start

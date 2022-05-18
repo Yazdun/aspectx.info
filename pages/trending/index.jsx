@@ -1,8 +1,6 @@
 import css from './index.module.css'
 import { Container, GamesGrid, Layout, Slider } from 'components'
 import { useState } from 'react'
-import { Fire1 } from 'assets'
-import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 import { ErrorBoundary } from 'react-error-boundary'
 import { RAWG_TRENDING } from 'services'
@@ -33,10 +31,7 @@ export default function Trending(props) {
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Layout title="AspectX | Trending">
         <Container gap sx={css.header}>
-          <div className={css.image}>
-            <Image src={Fire1} alt="" />
-          </div>
-          <h1 className={css.title}>Trending Right Now</h1>
+          <h1 className={css.title}>Trending Right Now 🔥</h1>
           <p>Trended games are based on our player counts and release date</p>
         </Container>
         <div className={css.container}>

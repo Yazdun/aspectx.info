@@ -1,16 +1,21 @@
-import { Container, Layout } from 'components'
+import { Container, ErrorPage, Layout } from 'components'
 import React from 'react'
-import game from 'mocks/game.json'
 import css from './styles.module.css'
 import Image from 'next/image'
 import { RAWG_GAME_SLUG } from 'services'
+import Page404 from 'pages/404'
 
 export async function getServerSideProps({ params }) {
   const res = await fetch(RAWG_GAME_SLUG(params.slug))
+  const errorCode = res.ok ? false : res.status
+
+  if (errorCode) {
+    params.statusCode = errorCode
+  }
 
   const data = await res.json()
 
-  return { props: { data } }
+  return { props: { data, errorCode } }
 }
 
 export default function GamePage(props) {
@@ -21,9 +26,13 @@ export default function GamePage(props) {
     platforms,
   } = props.data
 
+  if (props.errorCode) {
+    return <Page404 />
+  }
+
   return (
-    <Layout title="God of war">
-      <Container gap>
+    <Layout title={name}>
+      <Container margin="2rem auto">
         <h1 className={css.title}>{name}</h1>
         <div className={css.platforms}>
           {platforms.map(item => {

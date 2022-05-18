@@ -4,7 +4,7 @@
 }
 
 .image {
-  max-width: 10rem;
+  max-width: 5rem;
   margin: auto;
 }
 
@@ -13,5 +13,11 @@
 }
 
 .title {
-  margin: var(--gap-1) 0;
+  margin-bottom: var(--gap-1);
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    text-align: left;
+  }
 }

@@ -3,11 +3,12 @@
 }
 
 .image {
-  margin-block: var(--gap-2);
+  margin-block: var(--gap-3);
   height: 12rem;
   position: relative;
   border-radius: var(--br-2);
   overflow: hidden;
+  background-color: var(--background-2);
 }
 
 .platforms {
@@ -20,8 +21,9 @@
 }
 
 .desc {
-  font-size: 1.2rem;
+  /* font-size: 1.15rem; */
   line-height: 1.7rem;
+  white-space: pre-line;
 }
 
 @media only screen and (min-width: 500px) {

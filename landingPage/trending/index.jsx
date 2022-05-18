@@ -20,13 +20,7 @@ export const Trending = () => {
 
   return (
     <div className={cn(css.trending, isDark ? css.dark : css.light)}>
-      <Container
-        sx={css.container}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        duration={0.6}
-        delay={0.3}
-      >
+      <Container sx={css.container}>
         <h2 className={css.title}>checkout hot trending games</h2>
         <p className={cn(css.info, css.trendingInfo)}>
           There are thousands of awesome video games getting released on daily
