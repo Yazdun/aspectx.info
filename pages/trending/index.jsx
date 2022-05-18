@@ -1,7 +1,6 @@
 import css from './index.module.css'
 import { Container, GamesGrid, Layout, Slider } from 'components'
 import { useState } from 'react'
-import mock from 'mocks/trendings.json'
 import { Fire1 } from 'assets'
 import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
@@ -30,14 +29,8 @@ export async function getServerSideProps() {
 
 export default function Trending(props) {
   const [games, setGames] = useState(props.games || [])
-
   return (
-    <ErrorBoundary
-      FallbackComponent={ErrorFallback}
-      onReset={() => {
-        // reset the state of your app so the error doesn't happen again
-      }}
-    >
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Layout title="AspectX | Trending">
         <Container gap sx={css.header}>
           <div className={css.image}>
@@ -62,7 +55,6 @@ function ErrorFallback({ error, resetErrorBoundary }) {
     <div role="alert">
       <p>Something went wrong:</p>
       <pre>{error.message}</pre>
-      <button onClick={resetErrorBoundary}>Try again</button>
     </div>
   )
 }
