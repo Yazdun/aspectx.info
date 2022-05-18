@@ -1,0 +1,159 @@
+{
+  "id": 494384,
+  "slug": "god-of-war-ragnarok",
+  "name": "God of War: Ragnarök",
+  "name_original": "God of War: Ragnarök",
+  "description": "<p>Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.</p>\n<p>Along the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...</p>",
+  "metacritic": null,
+  "metacritic_platforms": [],
+  "released": null,
+  "tba": true,
+  "updated": "2022-03-20T09:02:04",
+  "background_image": "https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg",
+  "background_image_additional": "https://media.rawg.io/media/screenshots/6d1/6d1bff7cc998da159a523fdf242b0ec1.jpg",
+  "website": "https://blog.playstation.com/2021/09/09/first-look-at-god-of-war-ragnarok/",
+  "rating": 3.62,
+  "rating_top": 5,
+  "ratings": [
+    {
+      "id": 5,
+      "title": "exceptional",
+      "count": 3,
+      "percent": 37.5
+    },
+    {
+      "id": 4,
+      "title": "recommended",
+      "count": 3,
+      "percent": 37.5
+    },
+    {
+      "id": 1,
+      "title": "skip",
+      "count": 2,
+      "percent": 25.0
+    }
+  ],
+  "reactions": {},
+  "added": 398,
+  "added_by_status": {
+    "yet": 67,
+    "owned": 34,
+    "beaten": 2,
+    "toplay": 294,
+    "playing": 1
+  },
+  "playtime": 0,
+  "screenshots_count": 14,
+  "movies_count": 0,
+  "creators_count": 4,
+  "achievements_count": 0,
+  "parent_achievements_count": 0,
+  "reddit_url": "",
+  "reddit_name": "",
+  "reddit_description": "",
+  "reddit_logo": "",
+  "reddit_count": 0,
+  "twitch_count": 44,
+  "youtube_count": 0,
+  "reviews_text_count": 0,
+  "ratings_count": 8,
+  "suggestions_count": 509,
+  "alternative_names": [],
+  "metacritic_url": "https://www.metacritic.com/game/playstation-5/god-of-war-ragnarok",
+  "parents_count": 0,
+  "additions_count": 0,
+  "game_series_count": 10,
+  "user_game": null,
+  "reviews_count": 8,
+  "saturated_color": "0f0f0f",
+  "dominant_color": "0f0f0f",
+  "parent_platforms": [
+    {
+      "platform": {
+        "id": 2,
+        "name": "PlayStation",
+        "slug": "playstation"
+      }
+    }
+  ],
+  "platforms": [
+    {
+      "platform": {
+        "id": 187,
+        "name": "PlayStation 5",
+        "slug": "playstation5",
+        "image": null,
+        "year_end": null,
+        "year_start": 2020,
+        "games_count": 512,
+        "image_background": "https://media.rawg.io/media/games/560/56056a71c74f751552c9baedebf8f317.jpg"
+      },
+      "released_at": null,
+      "requirements": {}
+    },
+    {
+      "platform": {
+        "id": 18,
+        "name": "PlayStation 4",
+        "slug": "playstation4",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 6288,
+        "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+      },
+      "released_at": null,
+      "requirements": {}
+    }
+  ],
+  "stores": [],
+  "developers": [
+    {
+      "id": 18720,
+      "name": "SCE Santa Monica Studio",
+      "slug": "sce-santa-monica-studio",
+      "games_count": 8,
+      "image_background": "https://media.rawg.io/media/screenshots/1c5/1c5c574f1c04bf0434443199348f9d9e_cnD2pUD.jpg"
+    }
+  ],
+  "genres": [
+    {
+      "id": 4,
+      "name": "Action",
+      "slug": "action",
+      "games_count": 149454,
+      "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+    }
+  ],
+  "tags": [
+    {
+      "id": 37796,
+      "name": "exclusive",
+      "slug": "exclusive",
+      "language": "eng",
+      "games_count": 4513,
+      "image_background": "https://media.rawg.io/media/games/009/009e4e84975d6a60173ec1199db25aa3.jpg"
+    },
+    {
+      "id": 37797,
+      "name": "true exclusive",
+      "slug": "true-exclusive",
+      "language": "eng",
+      "games_count": 3996,
+      "image_background": "https://media.rawg.io/media/games/363/36306deef81e7955a5d0f5c3b43fccee.jpg"
+    }
+  ],
+  "publishers": [
+    {
+      "id": 11687,
+      "name": "Sony Interactive Entertainment",
+      "slug": "sony-interactive-entertainment",
+      "games_count": 305,
+      "image_background": "https://media.rawg.io/media/games/c5b/c5b3b6aa220050f7f504f4477cb51d3b.jpg"
+    }
+  ],
+  "esrb_rating": null,
+  "clip": null,
+  "description_raw": "Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.\r\n \r\nAlong the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms..."
+}

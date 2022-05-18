@@ -1,0 +1,31 @@
+.title {
+  font-weight: 500;
+}
+
+.image {
+  margin-block: var(--gap-2);
+  height: 12rem;
+  position: relative;
+  border-radius: var(--br-2);
+  overflow: hidden;
+}
+
+.platforms {
+  margin-top: var(--gap-1);
+  line-height: var(--gap-1);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+
+.desc {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .image {
+    height: 28rem;
+  }
+}
