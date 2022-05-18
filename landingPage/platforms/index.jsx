@@ -30,7 +30,6 @@ export const Platforms = () => {
               initial={{ opacity: 0, y: 100, scale: 0 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: isBrowser ? animDelay : 0 }}
-              viewport={{ once: true }}
             >
               {icon}
               {title}

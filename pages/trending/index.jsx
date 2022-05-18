@@ -6,11 +6,10 @@ import { Fire1 } from 'assets'
 import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 import { ErrorBoundary } from 'react-error-boundary'
+import { RAWG_TRENDING } from 'services'
 
 export async function getServerSideProps() {
-  const res = await fetch(
-    `https://api.rawg.io/api/games?dates=2022-10-10,2023-10-10&ordering=-added&key=8e549c513551423faf843bc8b968950d`,
-  )
+  const res = await fetch(RAWG_TRENDING)
 
   const data = await res.json()
 

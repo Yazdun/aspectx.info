@@ -6,8 +6,8 @@ export const RAWG = () => {
     <Container
       gap
       sx={css.container}
-      initial={{ opacity: 0, scale: 0.5 }}
-      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       duration={0.6}
       delay={0.3}
     >

@@ -6,8 +6,8 @@ export const Hero = () => {
     <Container
       gap
       sx={css.header}
-      initial={{ opacity: 0, y: -50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       duration={0.6}
       delay={0.3}
     >

@@ -24,7 +24,6 @@ export const Container = ({
       }}
       initial={initial}
       whileInView={whileInView}
-      viewport={{ once: true }}
       transition={{
         duration: duration ? duration : 0.3,
         delay: delay ? delay : 0,

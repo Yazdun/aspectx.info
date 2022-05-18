@@ -9,8 +9,8 @@ export const Partition = ({ image = Lightning, rtl, title, info, url }) => {
     <Container
       gap
       sx={cn(css.container, rtl && css.rtl)}
-      initial={{ opacity: 0, x: rtl ? -50 : 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       duration={0.6}
       delay={0.3}
     >
