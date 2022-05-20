@@ -18,3 +18,6 @@ export const RAWG_GAME_SLUG = slug =>
   `${ENDPOINT}/games/${slug}?&key=${process.env.API_KEY}`
 
 export const RAWG_CREATORS = `${ENDPOINT}/creators?page_size=20&key=${process.env.API_KEY}`
+
+export const RAWG_FIND_CREATOR = id =>
+  `${ENDPOINT}/creators/${id}?key=${process.env.API_KEY}`

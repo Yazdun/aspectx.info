@@ -4,6 +4,12 @@
   background-color: var(--background-2);
 }
 
+.header {
+  padding-inline: 1rem;
+  margin-bottom: var(--gap-5);
+  text-align: center;
+}
+
 .image {
   position: relative;
   height: 10rem;

@@ -5,6 +5,7 @@ import { RAWG_CREATORS } from 'services'
 import { IoIosImages } from 'react-icons/io'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export async function getStaticProps() {
   const res = await fetch(RAWG_CREATORS)
@@ -26,6 +27,7 @@ export default function Developers(props) {
   return (
     <Layout title="AspectX | Developers">
       <Container gap paddingInline="0">
+        <h1 className={css.header}>Industry&apos;s Top Developers</h1>
         <InfiniteScroll
           dataLength={devs.length}
           next={getMoreDevs}
@@ -38,24 +40,26 @@ export default function Developers(props) {
         >
           {devs.map(dev => {
             return (
-              <div className={css.card} key={dev.id}>
-                <div className={css.image}>
-                  {dev.image ? (
-                    <Image
-                      src={dev.image}
-                      alt={dev.name}
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  ) : (
-                    <IoIosImages className={css.noimage} />
-                  )}
-                </div>
-                <div className={css.title}>
-                  <h2 className={css.name}>{dev.name}</h2>
-                  <p>{dev.positions[0].name}</p>
-                </div>
-              </div>
+              <Link href={`/developers/${dev.id}`} key={dev.id}>
+                <a className={css.card}>
+                  <div className={css.image}>
+                    {dev.image ? (
+                      <Image
+                        src={dev.image}
+                        alt={dev.name}
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    ) : (
+                      <IoIosImages className={css.noimage} />
+                    )}
+                  </div>
+                  <div className={css.title}>
+                    <h2 className={css.name}>{dev.name}</h2>
+                    <p>{dev.positions[0].name}</p>
+                  </div>
+                </a>
+              </Link>
             )
           })}
         </InfiniteScroll>

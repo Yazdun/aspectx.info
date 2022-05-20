@@ -1,0 +1,50 @@
+.image {
+  position: relative;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  background-color: var(--background-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  text-align: center;
+  margin: var(--gap-1) 0;
+}
+
+.desc h3 {
+  margin: var(--gap-1) 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.noimage {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .info {
+    background-color: var(--background-2);
+    padding: 2rem;
+    border-radius: var(--br-2);
+    position: relative;
+  }
+
+  .image {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: -3rem;
+    right: 3rem;
+    outline: 11px solid var(--background-1);
+  }
+
+  .name {
+    margin-top: 0;
+    text-align: left;
+  }
+}

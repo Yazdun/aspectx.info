@@ -1,0 +1,400 @@
+{
+  "id": 31,
+  "name": "Gabe Newell",
+  "slug": "gabe-newell",
+  "image": "https://media.rawg.io/media/persons/5e5/5e5e064d3475fc3fe49d1d2debb4e36c.jpg",
+  "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg",
+  "description": "<p>Gabe Newell is a games director, producer and programmer. Newell has been working with Valve Software, NVIDIA Lightspeed Studios, Gearbox Software and Turtle Rock Studios. Newell&#39;s first published game was Half-Life released in 1998. Next, Gabe Newell worked on Half-Life: Opposing Force taking on the role of director. Later, Newell also was part of the team who developed Gunman Chronicles published by Sierra On-Line for PC. Most lately, Gabe Newell worked on Dota Underlords.</p>",
+  "games_count": 24,
+  "reviews_count": 31201,
+  "rating": "4.17",
+  "rating_top": 5,
+  "updated": "2021-11-05T00:58:55",
+  "positions": [
+    {
+      "id": 2,
+      "name": "director",
+      "slug": "director"
+    },
+    {
+      "id": 5,
+      "name": "producer",
+      "slug": "producer"
+    },
+    {
+      "id": 7,
+      "name": "programmer",
+      "slug": "programmer"
+    }
+  ],
+  "platforms": {
+    "total": 11,
+    "results": [
+      {
+        "count": 24,
+        "percent": 27.59,
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "count": 18,
+        "percent": 20.69,
+        "platform": {
+          "id": 5,
+          "name": "Apple Macintosh",
+          "slug": "mac"
+        }
+      },
+      {
+        "count": 16,
+        "percent": 18.39,
+        "platform": {
+          "id": 6,
+          "name": "Linux",
+          "slug": "linux"
+        }
+      },
+      {
+        "count": 14,
+        "percent": 16.09,
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "count": 7,
+        "percent": 8.05,
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "count": 5,
+        "percent": 5.75,
+        "platform": {
+          "id": 8,
+          "name": "Android",
+          "slug": "android"
+        }
+      },
+      {
+        "count": 2,
+        "percent": 2.3,
+        "platform": {
+          "id": 11,
+          "name": "SEGA",
+          "slug": "sega"
+        }
+      },
+      {
+        "count": 1,
+        "percent": 1.15,
+        "platform": {
+          "id": 4,
+          "name": "iOS",
+          "slug": "ios"
+        }
+      }
+    ],
+    "count": 8
+  },
+  "ratings": [
+    {
+      "id": 5,
+      "title": "exceptional",
+      "count": 14056,
+      "percent": 45.05
+    },
+    {
+      "id": 4,
+      "title": "recommended",
+      "count": 11943,
+      "percent": 38.28
+    },
+    {
+      "id": 3,
+      "title": "meh",
+      "count": 3469,
+      "percent": 11.12
+    },
+    {
+      "id": 1,
+      "title": "skip",
+      "count": 1733,
+      "percent": 5.55
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1957,
+      "count": 0
+    },
+    {
+      "year": 1958,
+      "count": 0
+    },
+    {
+      "year": 1959,
+      "count": 0
+    },
+    {
+      "year": 1960,
+      "count": 0
+    },
+    {
+      "year": 1961,
+      "count": 0
+    },
+    {
+      "year": 1962,
+      "count": 0
+    },
+    {
+      "year": 1963,
+      "count": 0
+    },
+    {
+      "year": 1964,
+      "count": 0
+    },
+    {
+      "year": 1965,
+      "count": 0
+    },
+    {
+      "year": 1966,
+      "count": 0
+    },
+    {
+      "year": 1967,
+      "count": 0
+    },
+    {
+      "year": 1968,
+      "count": 0
+    },
+    {
+      "year": 1969,
+      "count": 0
+    },
+    {
+      "year": 1970,
+      "count": 0
+    },
+    {
+      "year": 1971,
+      "count": 0
+    },
+    {
+      "year": 1972,
+      "count": 0
+    },
+    {
+      "year": 1973,
+      "count": 0
+    },
+    {
+      "year": 1974,
+      "count": 0
+    },
+    {
+      "year": 1975,
+      "count": 0
+    },
+    {
+      "year": 1976,
+      "count": 0
+    },
+    {
+      "year": 1977,
+      "count": 0
+    },
+    {
+      "year": 1978,
+      "count": 0
+    },
+    {
+      "year": 1979,
+      "count": 0
+    },
+    {
+      "year": 1980,
+      "count": 0
+    },
+    {
+      "year": 1981,
+      "count": 0
+    },
+    {
+      "year": 1982,
+      "count": 0
+    },
+    {
+      "year": 1983,
+      "count": 0
+    },
+    {
+      "year": 1984,
+      "count": 0
+    },
+    {
+      "year": 1985,
+      "count": 0
+    },
+    {
+      "year": 1986,
+      "count": 0
+    },
+    {
+      "year": 1987,
+      "count": 0
+    },
+    {
+      "year": 1988,
+      "count": 0
+    },
+    {
+      "year": 1989,
+      "count": 0
+    },
+    {
+      "year": 1990,
+      "count": 0
+    },
+    {
+      "year": 1991,
+      "count": 0
+    },
+    {
+      "year": 1992,
+      "count": 0
+    },
+    {
+      "year": 1993,
+      "count": 0
+    },
+    {
+      "year": 1994,
+      "count": 0
+    },
+    {
+      "year": 1995,
+      "count": 0
+    },
+    {
+      "year": 1996,
+      "count": 0
+    },
+    {
+      "year": 1997,
+      "count": 0
+    },
+    {
+      "year": 1998,
+      "count": 1
+    },
+    {
+      "year": 1999,
+      "count": 1
+    },
+    {
+      "year": 2000,
+      "count": 3
+    },
+    {
+      "year": 2001,
+      "count": 1
+    },
+    {
+      "year": 2002,
+      "count": 0
+    },
+    {
+      "year": 2003,
+      "count": 0
+    },
+    {
+      "year": 2004,
+      "count": 5
+    },
+    {
+      "year": 2005,
+      "count": 0
+    },
+    {
+      "year": 2006,
+      "count": 1
+    },
+    {
+      "year": 2007,
+      "count": 2
+    },
+    {
+      "year": 2008,
+      "count": 3
+    },
+    {
+      "year": 2009,
+      "count": 1
+    },
+    {
+      "year": 2010,
+      "count": 1
+    },
+    {
+      "year": 2011,
+      "count": 1
+    },
+    {
+      "year": 2012,
+      "count": 1
+    },
+    {
+      "year": 2013,
+      "count": 0
+    },
+    {
+      "year": 2014,
+      "count": 0
+    },
+    {
+      "year": 2015,
+      "count": 0
+    },
+    {
+      "year": 2016,
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "count": 0
+    },
+    {
+      "year": 2018,
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "count": 0
+    },
+    {
+      "year": 2020,
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "count": 0
+    },
+    {
+      "year": 2022,
+      "count": 0
+    }
+  ]
+}
