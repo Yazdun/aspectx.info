@@ -1,0 +1,65 @@
+.card {
+  padding: 1rem;
+  margin-bottom: var(--gap-1);
+  background-color: var(--background-2);
+}
+
+.image {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  background-color: var(--background-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noimage {
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.title {
+  text-align: center;
+  margin-top: var(--gap-1);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.title p {
+  text-transform: capitalize;
+  color: var(--clr-active-2);
+  font-weight: 500;
+}
+
+.InfiniteScroll {
+  margin: var(--gap-2) 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .card {
+    margin: 0;
+    border-radius: var(--br-2);
+  }
+
+  .image {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+}

@@ -12,6 +12,7 @@
   z-index: -1;
   padding-block: 2rem;
   background-color: var(--background-2);
+  box-shadow: var(--boxshadow-2);
 }
 
 .mobile {
@@ -23,7 +24,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   grid-gap: 1rem;
-}
-
-@media only screen and (min-width: 800px) {
 }

@@ -22,7 +22,7 @@ export async function getServerSideProps() {
     }),
   )
 
-  return { props: { data, games } }
+  return { props: { games } }
 }
 
 export default function Trending(props) {
