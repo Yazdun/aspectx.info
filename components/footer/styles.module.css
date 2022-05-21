@@ -1,0 +1,9 @@
+.footer {
+  position: sticky;
+  top: 100%;
+  box-shadow: var(--boxshadow-1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: var(--gap-5);
+  text-align: center;
+}

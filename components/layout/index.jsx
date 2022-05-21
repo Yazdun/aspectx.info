@@ -1,4 +1,4 @@
-import { Navigation } from 'components'
+import { Footer, Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import css from './styles.module.css'
 
@@ -35,6 +35,7 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
       <main id="main" className={css.main}>
         {children}
       </main>
+      <Footer />
     </>
   )
 }

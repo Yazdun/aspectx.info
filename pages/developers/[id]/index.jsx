@@ -62,7 +62,7 @@ export default function Dev(props) {
           ></div>
         </div>
       </Container>
-      {props.game && (
+      {props.games && (
         <Container gap>
           <GamesGrid games={props.games} />
         </Container>

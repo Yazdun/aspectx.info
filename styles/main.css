@@ -58,6 +58,10 @@ p {
   line-height: 1.5rem;
 }
 
+#__next {
+  min-height: 100vh;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
