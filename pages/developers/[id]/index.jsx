@@ -4,6 +4,7 @@ import css from './styles.module.css'
 import { IoIosImages } from 'react-icons/io'
 import { RAWG_FIND_CREATOR, RAWG_FIND_CREATOR_GAMES } from 'services'
 import { getPlaiceholder } from 'plaiceholder'
+import Page404 from 'pages/404'
 
 export async function getServerSideProps({ params }) {
   const [devRes, devGamesRes] = await Promise.all([
@@ -15,7 +16,11 @@ export async function getServerSideProps({ params }) {
 
   const games = await Promise.all(
     rawGames.results?.map(async game => {
-      const { base64, img } = await getPlaiceholder(game.background_image)
+      const { base64, img } = await getPlaiceholder(
+        game.background_image
+          ? game.background_image
+          : 'https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg',
+      )
 
       return {
         ...img,
@@ -33,6 +38,10 @@ export default function Dev(props) {
 
   function createMarkup() {
     return { __html: description }
+  }
+
+  if (props.dev.detail === 'Not found.') {
+    return <Page404 />
   }
 
   return (
@@ -53,9 +62,11 @@ export default function Dev(props) {
           ></div>
         </div>
       </Container>
-      <Container gap>
-        <GamesGrid games={props.games} />
-      </Container>
+      {props.game && (
+        <Container gap>
+          <GamesGrid games={props.games} />
+        </Container>
+      )}
     </Layout>
   )
 }

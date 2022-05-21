@@ -12,7 +12,11 @@ export async function getServerSideProps() {
 
   const games = await Promise.all(
     data.results?.map(async game => {
-      const { base64, img } = await getPlaiceholder(game.background_image)
+      const { base64, img } = await getPlaiceholder(
+        game.background_image
+          ? game.background_image
+          : 'https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg',
+      )
 
       return {
         ...img,
