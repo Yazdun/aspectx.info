@@ -8,7 +8,7 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
       <NextSeo
         title={title}
         description={desc}
-        additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
+        additionalLinkTags={[{ rel: 'icon', href: '/favicon.ico' }]}
         openGraph={{
           url: `https://aspectx.com${url}`,
           title: title,
