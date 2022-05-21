@@ -17,7 +17,14 @@ export const RAWG_TRENDING = `${ENDPOINT}/games?dates=${today.getFullYear()}-${(
 export const RAWG_GAME_SLUG = slug =>
   `${ENDPOINT}/games/${slug}?&key=${process.env.API_KEY}`
 
+// get creatores
 export const RAWG_CREATORS = `${ENDPOINT}/creators?page_size=20&key=${process.env.API_KEY}`
 
+// find creator
 export const RAWG_FIND_CREATOR = id =>
   `${ENDPOINT}/creators/${id}?key=${process.env.API_KEY}`
+
+// get creator's game
+
+export const RAWG_FIND_CREATOR_GAMES = id =>
+  `${ENDPOINT}/games?key=${process.env.API_KEY}&creators=${id}`
