@@ -1,7 +1,3 @@
-.items {
-  margin-bottom: 1rem;
-}
-
 .pagination {
   display: flex;
   align-items: center;
@@ -14,6 +10,7 @@
   width: 100%;
   max-width: 30rem;
   margin: auto;
+  margin-top: 5rem;
 }
 
 .icon {

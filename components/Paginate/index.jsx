@@ -2,21 +2,15 @@ import ReactPaginate from 'react-paginate'
 import React, { useEffect, useState } from 'react'
 import css from './index.module.css'
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from 'react-icons/md'
+import json from 'mocks/trendings.json'
 import { GrFormPrevious } from 'react-icons/gr'
+import { GamePrev, GamesGrid } from 'components'
 
-const items = [...Array(33).keys()]
+// const items = [...Array(33).keys()]
+const items = json.results
 
 function Items({ currentItems }) {
-  return (
-    <div className={css.items}>
-      {currentItems &&
-        currentItems.map(item => (
-          <div key={item}>
-            <h3>Item #{item}</h3>
-          </div>
-        ))}
-    </div>
-  )
+  return <GamesGrid games={currentItems} />
 }
 
 export function PaginatedItems({ itemsPerPage }) {
