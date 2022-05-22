@@ -39,6 +39,7 @@
 
 .desktopRoutes {
   display: none;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 650px) {

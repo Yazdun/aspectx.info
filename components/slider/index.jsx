@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import css from './styles.module.css'
 import 'swiper/css'
-import 'swiper/css/navigation'
 
 export function Slider({ slides }) {
   SwiperCore.use([Autoplay])
