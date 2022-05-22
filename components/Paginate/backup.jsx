@@ -7,29 +7,29 @@ import { GamesGrid } from 'components'
 
 const items = json.results
 
-export function PaginatedItems({ itemsPerPage, initial }) {
-  const [data, setData] = useState(null || initial)
-  const { count, results, next } = data
+function Items({ currentItems }) {
+  return (
+    <div className={css.items}>
+      <GamesGrid games={currentItems} />
+    </div>
+  )
+}
 
+export function PaginatedItems({ itemsPerPage }) {
   // We start with an empty list of items.
+  const [currentItems, setCurrentItems] = useState(null)
   const [pageCount, setPageCount] = useState(0)
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0)
 
-  const fetchPage = async () => {
-    const res = await fetch(next)
-    const json = await res.json()
-    setData(json)
-  }
-
   useEffect(() => {
-    fetchPage()
     // Fetch items from another resources.
     const endOffset = itemOffset + itemsPerPage
     console.log(`Loading items from ${itemOffset} to ${endOffset}`)
-    setPageCount(Math.ceil(count / itemsPerPage))
-  }, [itemOffset, itemsPerPage, count])
+    setCurrentItems(items.slice(itemOffset, endOffset))
+    setPageCount(Math.ceil(items.length / itemsPerPage))
+  }, [itemOffset, itemsPerPage])
 
   // Invoke when user click to request another page.
   const handlePageClick = event => {
@@ -42,9 +42,7 @@ export function PaginatedItems({ itemsPerPage, initial }) {
 
   return (
     <>
-      <div className={css.items}>
-        <GamesGrid games={results} />
-      </div>
+      <Items currentItems={currentItems} />
       <ReactPaginate
         nextLabel={<MdOutlineNavigateNext />}
         onPageChange={handlePageClick}
