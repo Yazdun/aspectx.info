@@ -1,6 +1,6 @@
 .container {
   padding-inline: 1rem;
-  margin: var(--gap-5) 0;
+  /* margin: var(--gap-5) 0; */
 }
 
 .image {
@@ -9,15 +9,13 @@
 }
 
 .header {
-  text-align: center;
+  margin-top: var(--gap-5) !important;
 }
 
 .title {
+  font-size: 1.6rem;
   margin-bottom: var(--gap-1);
 }
 
 @media only screen and (min-width: 600px) {
-  .header {
-    text-align: left;
-  }
 }

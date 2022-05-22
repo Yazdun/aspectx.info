@@ -34,14 +34,14 @@ export default function Trending(props) {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Layout title="AspectX | Trending">
-        <Container gap sx={css.header}>
+        <Container sx={css.header}>
           <h1 className={css.title}>Trending Right Now 🔥</h1>
-          <p>Trended games are based on our player counts and release date</p>
         </Container>
         <div className={css.container}>
           <Slider slides={games.slice(0, 8)} />
         </div>
         <Container gap>
+          <h2 className={css.title}>Users also liked 👇</h2>
           <GamesGrid games={games.slice(8)} />
         </Container>
       </Layout>
