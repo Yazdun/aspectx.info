@@ -6,7 +6,6 @@ import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useOnClickOutside } from 'hooks'
 import cn from 'classnames'
-import { isMobile } from 'react-device-detect'
 
 export const Menu = () => {
   const [isOpen, setOpen] = useState(false)
@@ -15,7 +14,7 @@ export const Menu = () => {
   useOnClickOutside(ref, () => setOpen(false))
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className={css.wrapper}>
       <div className={css.cta}>
         <Hamburger
           hideOutline={false}
@@ -37,7 +36,7 @@ export const Menu = () => {
               y: '-100%',
             }}
             transition={{ duration: 0.4 }}
-            className={cn(css.menu, isMobile && css.mobile)}
+            className={cn(css.menu)}
           >
             <Container sx={css.container}>
               <ul className={css.links}>

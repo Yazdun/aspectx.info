@@ -25,10 +25,26 @@
 
 .logo {
   font-size: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: var(--br-2);
+  overflow: hidden;
 }
 
 .wrapper {
   position: sticky;
   top: 0;
   z-index: var(--zindex-nav);
+}
+
+.desktopRoutes {
+  display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  .desktopRoutes {
+    display: flex;
+    gap: 1rem;
+    text-transform: capitalize;
+  }
 }

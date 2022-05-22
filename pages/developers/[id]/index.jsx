@@ -64,6 +64,7 @@ export default function Dev(props) {
       </Container>
       {props.games && (
         <Container gap>
+          <h2 style={{ marginBottom: '2rem' }}>{name}&apos;s Projects 🕹️</h2>
           <GamesGrid games={props.games} />
         </Container>
       )}

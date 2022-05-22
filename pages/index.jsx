@@ -25,9 +25,9 @@ export default function Home() {
         rtl
       />
       <Partition
-        title="Best Videogame Storefronts"
-        info="You wanna buy a videogame ? Make sure to checkout our storefront section and we will introduce you to the most trusted gaming online stores on the internet"
-        url="/stores"
+        title="Recent released games"
+        info="Do you want to miss hot new video games ? If not, then make sure to checkout latest released video games on the market in this section"
+        url="/trendings"
         image={Ice}
       />
       <RAWG />
