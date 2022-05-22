@@ -25,6 +25,17 @@ export const RAWG_FIND_CREATOR = id =>
   `${ENDPOINT}/creators/${id}?key=${process.env.API_KEY}`
 
 // get creator's game
-
 export const RAWG_FIND_CREATOR_GAMES = id =>
   `${ENDPOINT}/games?key=${process.env.API_KEY}&creators=${id}`
+
+// get the best rpg games
+export const RAWG_BEST_RPGS = `${ENDPOINT}/games?key=${process.env.API_KEY}`
+
+// get the best shooter games
+export const RAWG_BEST_SHOOTERS = `${ENDPOINT}/games?key=${process.env.API_KEY}`
+
+// get the best indie games
+export const RAWG_BEST_INDIE = `${ENDPOINT}/games?key=${process.env.API_KEY}`
+
+// get the best racing games
+export const RAWG_BEST_RACING = `${ENDPOINT}/games?key=${process.env.API_KEY}`

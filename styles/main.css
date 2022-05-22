@@ -62,6 +62,15 @@ p {
   min-height: 100vh;
 }
 
+/* pagination */
+.disabled {
+  opacity: 0.1;
+}
+
+.disabled a {
+  cursor: not-allowed;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,

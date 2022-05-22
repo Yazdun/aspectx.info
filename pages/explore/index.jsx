@@ -1,6 +1,15 @@
 import css from './index.module.css'
-import { Layout } from 'components'
+import { Container, GamesGrid, Layout, Slider } from 'components'
+import json from 'mocks/trendings.json'
+import { PaginatedItems } from 'components/Paginate'
 
 export default function Explore() {
-  return <Layout title="AspectX | Explore">Explore</Layout>
+  const games = json.results.slice(0, 9)
+  return (
+    <Layout title="AspectX | Explore">
+      <Container gap>
+        <PaginatedItems itemsPerPage={5} />
+      </Container>
+    </Layout>
+  )
 }

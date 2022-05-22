@@ -1,0 +1,42 @@
+.items {
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  background-color: red;
+  padding: 1rem;
+  background-color: var(--background-2);
+  border-radius: var(--br-2);
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.icon {
+  display: flex;
+  font-size: 2rem;
+}
+
+.active {
+  color: var(--clr-active-1);
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.pageLink {
+  font-weight: 900;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.pageLink:hover {
+  color: var(--clr-active-1);
+}
+
+.items {
+  /* background-color: red; */
+}
