@@ -29,4 +29,4 @@ export const RAWG_FIND_CREATOR_GAMES = id =>
   `${ENDPOINT}/games?key=${process.env.API_KEY}&creators=${id}`
 
 // get the best rpg games
-export const RAWG_ALL_GAMES = `${ENDPOINT}/games?key=${process.env.API_KEY}&page_size=9`
+export const RAWG_ALL_GAMES = `${ENDPOINT}/games?key=${process.env.API_KEY}&ordering=-added&page_size=12`
