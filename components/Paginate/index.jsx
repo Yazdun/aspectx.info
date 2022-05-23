@@ -69,7 +69,7 @@ export const PaginatedGames = ({ itemsPerPage, initial }) => {
         containerClassName={css.pagination}
         activeClassName={css.active}
         renderOnZeroPageCount={null}
-        // forcePage={force}
+        forcePage={force}
       />
     </>
   )
