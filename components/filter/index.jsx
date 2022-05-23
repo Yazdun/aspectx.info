@@ -4,6 +4,7 @@ import { BiChevronDown } from 'react-icons/bi'
 import { Genres } from 'utils'
 import { useOnClickOutside } from 'hooks'
 import { AnimatePresence, motion } from 'framer-motion'
+import { BsFillEraserFill } from 'react-icons/bs'
 
 export const Filter = ({ fetchGenres }) => {
   const [genre, setGenre] = useState()
@@ -44,7 +45,7 @@ export const Filter = ({ fetchGenres }) => {
                   onClick={() => {
                     setGenre(genre.title)
                     setIsOpen(false)
-                    fetchGenres(0, genre.title)
+                    fetchGenres(0, genre.id)
                   }}
                 >
                   {genre.title}
