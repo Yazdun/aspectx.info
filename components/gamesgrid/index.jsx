@@ -1,9 +1,10 @@
 import { GamePrev } from 'components'
 import css from './styles.module.css'
+import cn from 'classnames'
 
-export const GamesGrid = ({ games }) => {
+export const GamesGrid = ({ games, loading }) => {
   return (
-    <div className={css.grid}>
+    <div className={cn(css.grid, loading && css.loading)}>
       {games?.map(game => {
         return <GamePrev key={game.id} game={game} />
       })}

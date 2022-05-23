@@ -4,8 +4,25 @@
   grid-gap: var(--gap-2);
 }
 
+.loading {
+  opacity: 0.2;
+  animation: 2s loading infinite;
+}
+
 @media only screen and (min-width: 700px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
