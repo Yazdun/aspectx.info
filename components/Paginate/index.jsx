@@ -4,7 +4,7 @@ import css from './index.module.css'
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from 'react-icons/md'
 import { Filter, GamesGrid } from 'components'
 
-export function PaginatedGames({ itemsPerPage, initial }) {
+export const PaginatedGames = ({ itemsPerPage, initial }) => {
   const [data, setData] = useState(null || initial)
   const { count, results, next, previous } = data
   const [loading, setLoading] = useState(false)
