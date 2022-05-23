@@ -2,47 +2,53 @@ import ReactPaginate from 'react-paginate'
 import React, { useEffect, useState } from 'react'
 import css from './index.module.css'
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from 'react-icons/md'
-import { GamesGrid } from 'components'
+import { Filter, GamesGrid } from 'components'
 
-export function PaginatedItems({ itemsPerPage, initial }) {
+export function PaginatedGames({ itemsPerPage, initial }) {
   const [data, setData] = useState(null || initial)
   const { count, results, next, previous } = data
   const [loading, setLoading] = useState(false)
+  const [force, setForce] = useState(0)
 
   // We start with an empty list of items.
   const [pageCount, setPageCount] = useState(0)
-  // Here we use item offsets; we could also use page offsets
-  // following the API or data you're working with.
-  const [itemOffset, setItemOffset] = useState(0)
 
-  const fetchPage = async page => {
+  const fetchPage = async (page, selectedGenre) => {
     setLoading(true)
-    fetch(next ? next + `&page=${page + 1}` : previous + `&page=${page + 1}`)
+    selectedGenre && setForce(0)
+    fetch(
+      next
+        ? next +
+            `&page=${page + 1}${
+              selectedGenre ? `&genres=${selectedGenre}` : ''
+            }`
+        : previous +
+            `&page=${page + 1}${
+              selectedGenre ? `&genres=${selectedGenre}` : ''
+            }`,
+    )
       .then(res => res.json())
       .then(json => {
         setLoading(false)
         setData(json)
       })
-
-    // const json = await res.json()
-    // setData(json)
   }
 
   useEffect(() => {
     setPageCount(Math.ceil(count / itemsPerPage))
-  }, [itemOffset, itemsPerPage, count])
+  }, [itemsPerPage, count])
 
   // Invoke when user click to request another page.
   const handlePageClick = event => {
     if (typeof window === 'object')
       window.scrollTo({ top: 0, behavior: 'smooth' })
-    const newOffset = (event.selected * itemsPerPage) % 12
     fetchPage(event.selected)
-    setItemOffset(newOffset)
+    setForce(event.selected)
   }
 
   return (
     <>
+      <Filter fetchGenres={fetchPage} />
       <div className={css.items}>
         <GamesGrid games={results} loading={loading} />
       </div>
@@ -63,6 +69,7 @@ export function PaginatedItems({ itemsPerPage, initial }) {
         containerClassName={css.pagination}
         activeClassName={css.active}
         renderOnZeroPageCount={null}
+        forcePage={force}
       />
     </>
   )

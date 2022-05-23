@@ -1,6 +1,5 @@
-import css from './index.module.css'
-import { Container, GamesGrid, Layout, Slider } from 'components'
-import { PaginatedItems } from 'components/Paginate'
+import { Container, Layout } from 'components'
+import { PaginatedGames } from 'components'
 import { RAWG_ALL_GAMES } from 'services'
 
 export async function getServerSideProps() {
@@ -12,11 +11,10 @@ export async function getServerSideProps() {
 }
 
 export default function Explore(props) {
-  console.log(props)
   return (
     <Layout title="AspectX | Explore">
       <Container gap>
-        <PaginatedItems itemsPerPage={12} initial={props.data} />
+        <PaginatedGames itemsPerPage={12} initial={props.data} />
       </Container>
     </Layout>
   )

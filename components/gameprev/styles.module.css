@@ -1,7 +1,6 @@
 .image {
   border-radius: var(--br-2);
-  height: 10rem;
-  object-fit: cover;
+  height: 12rem;
   width: 100%;
   margin-bottom: 0.5rem;
   position: relative;
