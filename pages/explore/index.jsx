@@ -14,7 +14,7 @@ export default function Explore(props) {
   return (
     <Layout title="AspectX | Explore">
       <Container gap>
-        {/* <PaginatedGames itemsPerPage={12} initial={props.data} /> */}
+        <PaginatedGames itemsPerPage={12} initial={props.data} />
       </Container>
     </Layout>
   )
