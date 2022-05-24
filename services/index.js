@@ -30,3 +30,7 @@ export const RAWG_FIND_CREATOR_GAMES = id =>
 
 // get all games
 export const RAWG_ALL_GAMES = `${ENDPOINT}/games?key=${process.env.API_KEY}&ordering=-added&page_size=12`
+
+// get game screenshots
+export const RAWG_GAME_SLUG_SCREENSHOTS = slug =>
+  `${ENDPOINT}/games/${slug}/screenshots?&key=${process.env.API_KEY}`

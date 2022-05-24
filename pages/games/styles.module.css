@@ -21,9 +21,13 @@
 }
 
 .desc {
-  /* font-size: 1.15rem; */
   line-height: 1.7rem;
   white-space: pre-line;
+}
+
+.heading {
+  margin-bottom: var(--gap-2);
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 500px) {

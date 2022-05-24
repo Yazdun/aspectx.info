@@ -1,0 +1,10 @@
+.slider {
+  background-color: var(--background-2);
+}
+
+@media only screen and (min-width: 650px) {
+  .slider {
+    overflow: hidden;
+    border-radius: var(--br-2);
+  }
+}
