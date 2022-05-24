@@ -4,6 +4,7 @@
   --background-1: hsl(240, 100%, 98%);
   --background-2: hsl(240, 100%, 97%);
   --background-3: hsl(240, 100%, 92%);
+  --background-4: hsl(240, 100%, 95.9%);
 
   --foreground-1: hsl(0, 0%, 0%);
   --foreground-2: hsl(214, 8%, 50%);
@@ -11,7 +12,6 @@
 
   --boxshadow-1: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   --boxshadow-2: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  --boxshadow-3: ;
 
   --clr-active-1: hsl(247, 82%, 66%);
   --clr-active-2: hsl(247, 82%, 76%);
@@ -45,6 +45,7 @@
   --background-1: hsl(216, 27%, 7%);
   --background-2: hsl(215, 21%, 11.9%);
   --background-3: hsl(215, 21%, 15.9%);
+  --background-4: hsl(215, 21%, 15.9%);
 
   --clr-active-2: hsl(247, 82%, 76%);
 
@@ -54,5 +55,4 @@
 
   --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;
   --boxshadow-2: rgba(0, 0, 0, 0.5) 0px 25px 20px -20px;
-  --boxshadow-3: ;
 }

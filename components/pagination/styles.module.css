@@ -1,7 +1,6 @@
 .pagination {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   background-color: red;
   padding: 1rem;
@@ -11,6 +10,7 @@
   max-width: 30rem;
   margin: auto;
   margin-top: 5rem;
+  transition: 0.3s;
 }
 
 .icon {
@@ -36,4 +36,10 @@
 
 .items {
   min-height: 55rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .pagination:hover {
+    background-color: var(--background-4);
+  }
 }

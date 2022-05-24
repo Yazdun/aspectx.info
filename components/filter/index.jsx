@@ -4,6 +4,7 @@ import { BiChevronDown } from 'react-icons/bi'
 import { Genres } from 'utils'
 import { useOnClickOutside } from 'hooks'
 import { AnimatePresence, motion } from 'framer-motion'
+import cn from 'classnames'
 
 export const Filter = ({ fetchGenres }) => {
   const [genre, setGenre] = useState()
@@ -36,19 +37,19 @@ export const Filter = ({ fetchGenres }) => {
             }}
             transition={{ duration: 0.2 }}
           >
-            {Genres.map(genre => {
+            {Genres.map(g => {
               return (
                 <button
-                  className={css.genre}
-                  key={genre.title}
+                  className={cn(css.genre, genre === g.title && css.active)}
+                  key={g.title}
                   onClick={() => {
-                    setGenre(genre.title)
+                    setGenre(g.title)
                     setIsOpen(false)
-                    fetchGenres(0, genre.id)
+                    fetchGenres(0, g.id)
                   }}
                 >
-                  {genre.title}
-                  {genre.icon}
+                  {g.title}
+                  {g.icon}
                 </button>
               )
             })}
