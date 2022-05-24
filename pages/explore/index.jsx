@@ -2,7 +2,7 @@ import { Container, Layout } from 'components'
 import { PaginatedGames } from 'components'
 import { RAWG_ALL_GAMES } from 'services'
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(RAWG_ALL_GAMES)
 
   const data = await res.json()

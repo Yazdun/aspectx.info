@@ -34,3 +34,6 @@ export const RAWG_ALL_GAMES = `${ENDPOINT}/games?key=${process.env.API_KEY}&orde
 // get game screenshots
 export const RAWG_GAME_SLUG_SCREENSHOTS = slug =>
   `${ENDPOINT}/games/${slug}/screenshots?&key=${process.env.API_KEY}`
+
+// get high rated games
+export const RAWG_HIGH_RATED_GAMES = `${ENDPOINT}/games?metacritic=90,100&page_size=38&ordering=-added&key=${process.env.API_KEY}`

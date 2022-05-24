@@ -28,10 +28,23 @@
 .heading {
   margin-bottom: var(--gap-2);
   font-weight: 500;
+  padding: 1rem;
+}
+
+.screenshots {
+  padding: 0 !important;
 }
 
 @media only screen and (min-width: 500px) {
   .image {
     height: 28rem;
+  }
+
+  .screenshots {
+    padding: 1rem !important;
+  }
+
+  .heading {
+    padding: 0;
   }
 }

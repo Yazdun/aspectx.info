@@ -3,10 +3,10 @@
 :root {
   --background-1: hsl(240, 100%, 98%);
   --background-2: hsl(240, 100%, 97%);
-  --background-3: ;
+  --background-3: hsl(240, 100%, 92%);
 
   --foreground-1: hsl(0, 0%, 0%);
-  --foreground-2: hsl(237, 8%, 47%);
+  --foreground-2: hsl(214, 8%, 50%);
   --foreground-3: ;
 
   --boxshadow-1: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -44,12 +44,12 @@
 [data-theme='dark'] {
   --background-1: hsl(216, 27%, 7%);
   --background-2: hsl(215, 21%, 11.9%);
-  --background-3: ;
+  --background-3: hsl(215, 21%, 15.9%);
 
   --clr-active-2: hsl(247, 82%, 76%);
 
   --foreground-1: rgb(255, 255, 255);
-  --foreground-2: rgb(119, 119, 153);
+  --foreground-2: rgb(176, 176, 189);
   --foreground-3: ;
 
   --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;

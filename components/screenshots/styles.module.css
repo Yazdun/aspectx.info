@@ -1,8 +1,13 @@
 .slider {
   background-color: var(--background-2);
+  cursor: grab;
 }
 
-@media only screen and (min-width: 650px) {
+.image {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
   .slider {
     overflow: hidden;
     border-radius: var(--br-2);

@@ -1,4 +1,4 @@
-import { Container, Layout, Screenshots } from 'components'
+import { Container, Layout, Requirements, Screenshots } from 'components'
 import css from './styles.module.css'
 import Image from 'next/image'
 import { RAWG_GAME_SLUG, RAWG_GAME_SLUG_SCREENSHOTS } from 'services'
@@ -26,6 +26,12 @@ export default function GamePage(props) {
     platforms,
   } = props?.game
 
+  const requirement = props.game.platforms.filter(item => {
+    return item.platform.name === 'PC'
+  })[0]?.requirements
+
+  console.log(requirement)
+
   if (!props.game.name) {
     return <Page404 />
   }
@@ -46,8 +52,9 @@ export default function GamePage(props) {
         )}
         <p className={css.desc}>{description}</p>
       </Container>
+      {requirement && <Requirements requirement={requirement} />}
       {props.screenshots && (
-        <Container gap>
+        <Container gap sx={css.screenshots}>
           <h2 className={css.heading}>{name}&apos;s Screenshots</h2>
           <Screenshots screenshots={props.screenshots.results} />
         </Container>
