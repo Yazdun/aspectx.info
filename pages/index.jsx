@@ -4,7 +4,7 @@ import { Hero, Partition, Platforms, RAWG, Trending } from 'landingPage'
 
 export default function Home() {
   return (
-    <Layout title="AspectX">
+    <Layout title="AspectX" desc="Explore video games like never before">
       <Hero />
       <Trending />
       <Platforms />
