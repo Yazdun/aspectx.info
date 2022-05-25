@@ -31,7 +31,6 @@ export async function getStaticProps() {
 export default function Mustplay(props) {
   const [games, setGames] = useState(props.games || [])
 
-  console.log(games)
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Layout title="AspectX | MustPlay">

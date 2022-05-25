@@ -21,6 +21,26 @@
   z-index: -1;
 }
 
+.searchTerm {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.loading {
+  animation: 1s loading infinite linear;
+  color: var(--clr-active-1);
+}
+
 .input {
   border: none;
   outline: none;
@@ -42,4 +62,23 @@
 
 .input::placeholder {
   color: var(--foreground-2);
+}
+
+.result {
+  margin-top: 0.4rem;
+  display: block;
+  color: var(--clr-active-1);
+}
+
+.error {
+  margin-top: var(--gap-1);
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

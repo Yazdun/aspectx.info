@@ -30,8 +30,6 @@ export default function GamePage(props) {
     return item.platform.name === 'PC'
   })[0]?.requirements
 
-  console.log(requirement)
-
   if (!props.game.name) {
     return <Page404 />
   }

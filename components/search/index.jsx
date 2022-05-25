@@ -1,13 +1,46 @@
 import css from './styles.module.css'
 import { FiSearch } from 'react-icons/fi'
+import { ImSpinner2 } from 'react-icons/im'
 import { useState, useRef } from 'react'
 import { Container } from 'components'
 import { useOnClickOutside } from 'hooks'
 import { AnimatePresence, motion } from 'framer-motion'
+import { RAWG_SEARCH } from 'services'
+import Link from 'next/link'
 
 export const Search = () => {
   const [open, setOpen] = useState(false)
+  const [inputValue, setInputValue] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [results, setResults] = useState([])
+  const [noResult, setNoResult] = useState(false)
+  const [timer, setTimer] = useState(null)
   const ref = useRef()
+
+  const fakeApi = async () => {
+    fetch(RAWG_SEARCH(inputValue))
+      .then(res => res.json())
+      .then(json => {
+        setResults(json.results)
+        setNoResult(json.count === 0 ? true : false)
+        setLoading(false)
+      })
+  }
+
+  const inputChanged = e => {
+    setInputValue(e.target.value)
+    e.target.value === '' && setResults([])
+    e.target.value === '' && setNoResult(false)
+    e.target.value && setLoading(true)
+
+    clearTimeout(timer)
+
+    const newTimer = setTimeout(() => {
+      e.target.value && fakeApi()
+    }, 1000)
+
+    setTimer(newTimer)
+  }
 
   useOnClickOutside(ref, () => setOpen(false))
 
@@ -32,11 +65,33 @@ export const Search = () => {
             transition={{ duration: 0.4 }}
           >
             <Container>
-              <input
-                type="text"
-                placeholder="Start typing ..."
-                className={css.input}
-              />
+              <div className={css.searchTerm}>
+                <div className={css.icon}>
+                  {loading ? (
+                    <ImSpinner2 className={css.loading} />
+                  ) : (
+                    <FiSearch />
+                  )}
+                </div>
+                <input
+                  type="text"
+                  placeholder="Start typing ..."
+                  className={css.input}
+                  onChange={inputChanged}
+                />
+              </div>
+              {results.map(game => {
+                return (
+                  <Link href={`/games/${game.slug}`} key={game.id}>
+                    <a className={css.result}>🠚 {game.name}</a>
+                  </Link>
+                )
+              })}
+              {noResult && (
+                <p className={css.error}>
+                  There were no results for your searched term
+                </p>
+              )}
             </Container>
           </motion.div>
         )}
