@@ -4,7 +4,7 @@ import css from './styles.module.css'
 
 export const Layout = ({ children, title, desc, image, url }) => {
   const og =
-    'https://res.cloudinary.com/dakts9ect/image/upload/v1653476029/sideprojects/og_di8nv2.jpg'
+    'https://res.cloudinary.com/dakts9ect/image/upload/v1653478809/sideprojects/8_nylvfx.jpg'
   return (
     <>
       <NextSeo
