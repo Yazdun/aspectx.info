@@ -3,6 +3,8 @@ import { NextSeo } from 'next-seo'
 import css from './styles.module.css'
 
 export const Layout = ({ children, title, desc, image, url }) => {
+  const og =
+    'https://res.cloudinary.com/dakts9ect/image/upload/v1653476029/sideprojects/og_di8nv2.jpg'
   return (
     <>
       <NextSeo
@@ -10,13 +12,13 @@ export const Layout = ({ children, title, desc, image, url }) => {
         description={desc}
         additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
         openGraph={{
-          url: `https://aspectx.com/${url}`,
+          url: `https://aspectx.info/${url}`,
           title: title,
           description: desc,
           locale: 'en_us',
           images: [
             {
-              url: image,
+              url: image ? image : og,
               width: 1200,
               height: 630,
               alt: title,
