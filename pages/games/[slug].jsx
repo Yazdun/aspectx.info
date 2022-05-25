@@ -3,6 +3,7 @@ import css from './styles.module.css'
 import Image from 'next/image'
 import { RAWG_GAME_SLUG, RAWG_GAME_SLUG_SCREENSHOTS } from 'services'
 import Page404 from 'pages/404'
+import { getPlaiceholder } from 'plaiceholder'
 
 export async function getServerSideProps({ params }) {
   const [gameRes, screenshotsRes] = await Promise.all([
@@ -15,7 +16,13 @@ export async function getServerSideProps({ params }) {
     screenshotsRes.json(),
   ])
 
-  return { props: { game, screenshots } }
+  const { base64, img } = await getPlaiceholder(
+    game.background_image
+      ? game.background_image
+      : 'https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg',
+  )
+
+  return { props: { game, base64, screenshots } }
 }
 
 export default function GamePage(props) {
@@ -45,7 +52,14 @@ export default function GamePage(props) {
         </div>
         {mainCover && (
           <div className={css.image}>
-            <Image src={mainCover} alt={name} layout="fill" objectFit="cover" />
+            <Image
+              src={mainCover}
+              alt={name}
+              layout="fill"
+              objectFit="cover"
+              placeholder="blur"
+              blurDataURL={props.base64}
+            />
           </div>
         )}
         <p className={css.desc}>{description}</p>
