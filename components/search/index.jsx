@@ -7,6 +7,7 @@ import { useOnClickOutside } from 'hooks'
 import { AnimatePresence, motion } from 'framer-motion'
 import { RAWG_SEARCH } from 'services'
 import Link from 'next/link'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 
 export const Search = () => {
   const [open, setOpen] = useState(false)
@@ -86,7 +87,8 @@ export const Search = () => {
                 return (
                   <Link href={`/games/${game.slug}`} key={game.id}>
                     <a className={css.result} onClick={() => setOpen(false)}>
-                      🠚 {game.name}
+                      <FaLongArrowAltRight />
+                      {game.name}
                     </a>
                   </Link>
                 )
