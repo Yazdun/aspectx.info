@@ -34,7 +34,7 @@ export async function getServerSideProps({ params }) {
 }
 
 export default function Dev(props) {
-  const { name, image, description, rating, games_count } = props.dev
+  const { name, image, description } = props.dev
 
   function createMarkup() {
     return { __html: description }
@@ -45,7 +45,7 @@ export default function Dev(props) {
   }
 
   return (
-    <Layout title={name}>
+    <Layout title={name} image={image} desc={`Checkout ${name} on AspectX`}>
       <Container gap>
         <div className={css.info}>
           <div className={css.image}>

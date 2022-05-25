@@ -12,7 +12,11 @@ export async function getStaticProps() {
 
 export default function Explore(props) {
   return (
-    <Layout title="AspectX | Explore">
+    <Layout
+      title="AspectX | Explore"
+      desc="Start exploring and find an awesome videogame"
+      url="explore"
+    >
       <Container gap>
         <PaginatedGames itemsPerPage={12} initial={props.data} />
       </Container>

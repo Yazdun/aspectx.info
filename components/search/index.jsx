@@ -17,7 +17,7 @@ export const Search = () => {
   const [timer, setTimer] = useState(null)
   const ref = useRef()
 
-  const fakeApi = async () => {
+  const callApi = async () => {
     fetch(RAWG_SEARCH(inputValue))
       .then(res => res.json())
       .then(json => {
@@ -29,14 +29,16 @@ export const Search = () => {
 
   const inputChanged = e => {
     setInputValue(e.target.value)
+
+    e.target.value && setLoading(true)
     e.target.value === '' && setResults([])
     e.target.value === '' && setNoResult(false)
-    e.target.value && setLoading(true)
+    e.target.value === '' && setLoading(false)
 
     clearTimeout(timer)
 
     const newTimer = setTimeout(() => {
-      e.target.value && fakeApi()
+      e.target.value && callApi()
     }, 1000)
 
     setTimer(newTimer)
@@ -83,7 +85,9 @@ export const Search = () => {
               {results.map(game => {
                 return (
                   <Link href={`/games/${game.slug}`} key={game.id}>
-                    <a className={css.result}>🠚 {game.name}</a>
+                    <a className={css.result} onClick={() => setOpen(false)}>
+                      🠚 {game.name}
+                    </a>
                   </Link>
                 )
               })}

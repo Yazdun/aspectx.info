@@ -25,7 +25,11 @@ export default function Developers(props) {
   }
 
   return (
-    <Layout title="AspectX | Developers">
+    <Layout
+      title="AspectX | Developers"
+      url="developers"
+      desc="Checkout game industry's best developers"
+    >
       <Container gap paddingInline="0">
         <h1 className={css.header}>Industry&apos;s Top Developers</h1>
         <InfiniteScroll

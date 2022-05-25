@@ -2,7 +2,7 @@ import { Footer, Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import css from './styles.module.css'
 
-export const Layout = ({ children, title, desc, keywords, image, url }) => {
+export const Layout = ({ children, title, desc, image, url }) => {
   return (
     <>
       <NextSeo
@@ -10,7 +10,7 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
         description={desc}
         additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
         openGraph={{
-          url: `https://aspectx.com${url}`,
+          url: `https://aspectx.com/${url}`,
           title: title,
           description: desc,
           locale: 'en_us',
@@ -23,11 +23,11 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
               type: 'image/jpeg',
             },
           ],
-          site_name: 'Yazdun',
+          site_name: 'AspectX',
         }}
         twitter={{
-          handle: '@Yazdun',
-          site: '@Yazdun',
+          handle: '@AspectX',
+          site: '@AspectX',
           cardType: 'summary_large_image',
         }}
       />

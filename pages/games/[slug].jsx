@@ -16,7 +16,7 @@ export async function getServerSideProps({ params }) {
     screenshotsRes.json(),
   ])
 
-  const { base64, img } = await getPlaiceholder(
+  const { base64 } = await getPlaiceholder(
     game.background_image
       ? game.background_image
       : 'https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg',
@@ -31,6 +31,7 @@ export default function GamePage(props) {
     description_raw: description,
     background_image: mainCover,
     platforms,
+    slug,
   } = props?.game
 
   const requirement = props.game.platforms.filter(item => {
@@ -42,7 +43,7 @@ export default function GamePage(props) {
   }
 
   return (
-    <Layout title={name}>
+    <Layout title={name} desc={description} image={mainCover} url={slug}>
       <Container gap>
         <h1 className={css.title}>{name}</h1>
         <div className={css.platforms}>

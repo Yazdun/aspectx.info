@@ -33,7 +33,11 @@ export default function Mustplay(props) {
 
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Layout title="AspectX | MustPlay">
+      <Layout
+        title="AspectX | MustPlay"
+        desc="Checkout MustPlay videogames"
+        url="mustplay"
+      >
         <Container sx={css.header}>
           <h1 className={css.title}>Most Popular Games</h1>
         </Container>

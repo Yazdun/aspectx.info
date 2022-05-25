@@ -33,7 +33,11 @@ export default function Trending(props) {
   const [games, setGames] = useState(props.games || [])
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Layout title="AspectX | Trending">
+      <Layout
+        title="AspectX | Trending"
+        desc="Checkout hot trending video games"
+        url="trending"
+      >
         <Container sx={css.header}>
           <h1 className={css.title}>Trending Right Now 🔥</h1>
         </Container>

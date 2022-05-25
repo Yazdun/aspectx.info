@@ -4,7 +4,10 @@ import css from './styles.module.css'
 
 export default function Page404() {
   return (
-    <Layout title="AspectX | 404">
+    <Layout
+      title="AspectX | 404"
+      desc="This page doesn't exist or has been deleted"
+    >
       <Container gap sx={css.err}>
         <RiGhostLine className={css.icon} />
         <div className={css.info}>
