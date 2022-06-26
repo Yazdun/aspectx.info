@@ -27,7 +27,7 @@ export default function Home() {
       <Partition
         title="Recent released games"
         info="Do you want to miss hot new video games ? If not, then make sure to checkout latest released video games on the market in this section"
-        url="/trendings"
+        url="/trending"
         image={Ice}
       />
       <RAWG />
