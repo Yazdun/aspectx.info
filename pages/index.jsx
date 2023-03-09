@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <Layout title="AspectX" desc="Explore video games like never before">
       <Hero />
-      <Trending />
       <Platforms />
       <Partition
         title="You Must Play These Titles"
